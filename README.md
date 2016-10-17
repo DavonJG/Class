@@ -1,5 +1,5 @@
 # Class
-Files created for class use
+Files created for class use (last updated October 2016)
 
 Davon Grant
 
