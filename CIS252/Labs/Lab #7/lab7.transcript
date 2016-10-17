@@ -1,0 +1,24 @@
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+ghci> :cd C:\Users\Davon\Documents\Freshman\Spring\CIS252\Lab #7
+ghci> :load "lab7.hs"
+[1 of 1] Compiling Main             ( lab7.hs, interpreted )
+Ok, modules loaded: Main.
+ghci> sqRoots [49,121,4,16]
+[7.0,11.0,2.0,4.0]
+ghci> getLengths ["Spring","break's","almost","here"]
+[("Spring",6),("break's",7),("almost",6),("here",4)]
+ghci> getLengths ["one","two","three"]
+[("one",3),("two",3),("three",5)]
+ghci> grabOdds [34,-7,2,0,-8,5,1]
+[-7,5,1]
+ghci> grabOdds [123,5345,564,2,46]
+[123,5345]
+ghci> vowels [('b',1),('r',2),('e',3),('a',1),('k',2)]
+[('e',3),('a',1)]
+ghci> vowels [('a',9),('r',2),('r',1),('o',7),('k',2)]
+[('a',9),('o',7)]
+ghci> mystery 2 [1,3,5,7,8,4,99]
+[-5,-3,-2,89]
+ghci> mystery2 2 [1,3,5,7,8,4,99]
+[-5,-3,-2,89]
+ghci> 

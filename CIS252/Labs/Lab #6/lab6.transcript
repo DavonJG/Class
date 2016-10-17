@@ -1,0 +1,27 @@
+ghci> :cd C:\Users\Davon\Documents\Freshman\Spring\CIS252\Lab #6
+Warning: changing directory causes all loaded modules to be unloaded,
+because the search path has changed.
+ghci> :load "lab6.hs"
+[1 of 1] Compiling Main             ( lab6.hs, interpreted )
+Ok, modules loaded: Main.
+ghci> GoodLuck>Wits
+True
+ghci> Wits>Speed
+True
+ghci> Speed>Brawn
+True
+ghci> Brawn>GoodLuck
+False
+ghci> upgrade fred Wits
+Cr "Fred" Fish Wits
+ghci> upgrade rex Wits
+Cr "Rex" Mongoose GoodLuck
+ghci> upgrade bella Brawn
+Cr "Isabel" Tiger Speed
+ghci> upgradeAll Wits [fred,rex,bella]
+[Cr "Fred" Fish Wits,Cr "Rex" Mongoose GoodLuck,Cr "Isabel" Tiger Wits]
+ghci> upgradeAll GoodLuck [fred,rex,bella]
+[Cr "Fred" Fish GoodLuck,Cr "Rex" Mongoose GoodLuck,Cr "Isabel" Tiger GoodLuck]
+ghci> upgradeAll Speed [fred,rex]
+[Cr "Fred" Fish Speed,Cr "Rex" Mongoose GoodLuck]
+ghci> 

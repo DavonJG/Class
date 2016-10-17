@@ -1,0 +1,50 @@
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+ghci> :cd C:\Users\Davon\Documents\Freshman\Spring\CIS252\HW#3
+ghci> :load "HW#3.hs"
+[1 of 1] Compiling Main             ( HW#3.hs, interpreted )
+Ok, modules loaded: Main.
+ghci> sub 5 3
+2
+ghci> sub 3 9
+0
+ghci> sub (-5) 2
+*** Exception: Requires positive inputs
+ghci> quo (-5) 2
+*** Exception: Requires positive inputs
+ghci> quo 16 3
+0
+ghci> listLen "sdadsada"
+8
+ghci> listLen "123456789"
+9
+ghci> isPalindrome "racecar"
+True
+ghci> isPalindrome "not a palindrome"
+False
+ghci> palindrome "f"
+"f"
+ghci> cc "hello" " Professor Irwin"
+"hello Professor Irwin"
+ghci> cc "My name is " "Davon Grant"
+"My name is Davon Grant"
+ghci> sumList [1,2,3,4,5]
+15
+ghci> f 3
+13
+ghci> f 2
+10
+ghci> g 3
+
+<interactive>:25:1:
+    Non type-variable argument in the constraint: Num [a]
+    (Use FlexibleContexts to permit this)
+    When checking that ‘it’ has the inferred type
+      it :: forall a. (Num a, Num [a]) => [a]
+ghci> g (3)
+
+<interactive>:26:1:
+    Non type-variable argument in the constraint: Num [a]
+    (Use FlexibleContexts to permit this)
+    When checking that ‘it’ has the inferred type
+      it :: forall a. (Num a, Num [a]) => [a]
+ghci> 
