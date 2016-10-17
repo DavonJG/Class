@@ -1,0 +1,26 @@
+public class HW2{
+  
+  static int result = 1;
+  
+  public static void main(String[]args){
+    int x = factRec(3);
+    System.out.println(x);
+  }
+  
+  public static int factRec(int n){
+    if(n == 1){
+      return n;
+    }
+    else{
+      result *= (n-1);
+      if(n-1 != 0){
+        factRec(n-1);
+      }
+      else{
+        return result;
+      }
+      return result;
+    }
+  }
+  
+}

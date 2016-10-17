@@ -1,0 +1,45 @@
+public class Boxcar extends RailroadCar{
+  private double height, width, length;
+  public static void main(String[]args){
+  }
+  public Boxcar(){ //default contructor
+    height = 10;
+    width = 9.4;
+    length = 55;
+  }
+  
+  public Boxcar(double h, double l, double w){ //three parameter constructor
+    height = h;
+    length = l;
+    width = w;
+  }
+  public double volume(){ //volume method
+    double v = this.height * this.width * this.length;
+    return v;
+  }
+  
+  //get & set methods
+  protected double getHeight(){
+    return height;
+  }
+  
+  protected double getLength(){
+    return length;
+  }
+    
+  protected double getWidth(){
+    return width;
+  }
+  
+  protected void setHeight(double h){
+    height = h;
+  }
+  
+  protected void setLength(double l){
+    length = l;
+  }
+  
+  protected void setWidth(double w){
+    width = w;
+  }
+}

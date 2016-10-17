@@ -1,0 +1,5 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/lab2
+> run SmallerRoot
+Enter three numbers:  [DrJava Input Box]
+The smaller root of 1.0x^2 + -3.0x + 2.0 is 1.0
+> 

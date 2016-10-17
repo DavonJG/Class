@@ -1,0 +1,94 @@
+body{
+	background: #C0C0C0;
+	font-weight: bold;
+	font-style: italic;
+	overflow: auto;
+}
+
+.container{
+	width:1000px;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(255,255,255);
+	overflow: auto;
+}
+
+.header{
+	width:985px;
+	margin:5px;
+	height:145px;
+	background: rgb(15,160,197);
+	font-weight: bold;
+	font-style: italic;
+	padding: 5px
+}
+
+.main-story{
+	width:646px;
+	margin:5px;
+	height:290px;
+	background: rgb(251,229,8);
+	float:left;
+	font-weight: bold;
+	font-style: italic;
+	padding: 5px;
+}
+
+.secondary-story{
+	width:314px;
+	margin:5px;
+	height:290px;
+	float:right;
+	background: rgb(205,29,140);
+	font-weight: bold;
+	font-style: italic;
+	padding: 5px;
+}
+
+.category-stories-1{
+	width: 313px;
+	margin: 5px;
+	height: 240px;
+	background: rgb(247,145,47);
+	float : left;
+	font-weight: bold;
+	font-style: italic;
+	padding: 5px;
+}
+
+.category-stories-2{
+	width: 313px;
+	margin: 5px;
+	height: 240px;
+	background: rgb(44,87,166);
+	float : left;
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(255,255,255);
+	padding: 5px;
+}
+
+.category-stories-3{
+	width: 313px;
+	margin: 5px;
+	height: 240px;
+	background: rgb(19,139,67);
+	float : left;
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(255,255,255);
+	padding: 5px;
+}
+
+.footer{
+	color: rgb(255,255,255);
+	width: 980px;
+	margin: 5px;
+	height: 140px;
+	background: rgb(233,29,38);
+	float: left;
+	font-weight: bold;
+	font-style: italic;
+	padding: 5px;
+}

@@ -1,0 +1,42 @@
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+ghci> :cd C:\Users\Davon\Documents\Freshman\Spring\CIS252\HW#5
+ghci> :load "HW#5.hs"
+[1 of 1] Compiling Main             ( HW#5.hs, interpreted )
+Ok, modules loaded: Main.
+ghci> area (Circle 5)
+78.5
+ghci> area (Triangle 3 4 5)
+6.0
+ghci> isRound (Circle 5)
+True
+ghci> isRound (Rectangle 4 5)
+False
+ghci> isRound (Triangle 1 2 3)
+False
+ghci> perimeter (Circle 5)
+31.400000000000002
+ghci> perimeter (Rectangle 4 5)
+18.0
+ghci> perimeter (Triangle 3 4 5)
+12.0
+ghci> isRegular (Rectangle 5 5)
+True
+ghci> isRegular (Rectangle 5 6)
+False
+ghci> isRegular (Triangle 5 5 5)
+True
+ghci> isRegular (Triangle 3 4 5)
+False
+ghci> isRegular (Circle 4)
+True
+ghci> matches 6 [1,2,3,4,5,6,7,8,9]
+[6]
+ghci> onSeparateLines["hello","123","hey"]
+"hello\n123\nhey"
+ghci> twoDigitsSum[3,4,5]
+7
+ghci> firstDigit "1538285839"
+'1'
+ghci> myZip3 [1,2,3] ["a","b","c"] ["$","%","!"]
+[(1,"a","$"),(2,"b","%"),(3,"c","!")]
+ghci> 

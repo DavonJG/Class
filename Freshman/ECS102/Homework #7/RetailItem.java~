@@ -1,0 +1,28 @@
+public class RetailItem{
+  private String description;
+  private double price;
+  private int unitsOnHand;
+  public RetailItem(String s, double pr, int units){
+    description = s;
+    price = pr;
+    unitsOnHand = units;
+  }
+  public void setDescription(String desc){
+    description = desc;
+  }
+  public String getDescription(){
+    return description;
+  }
+  public void setPrice(double p){
+    price = p;
+  }
+  public double getPrice(){
+    return price;
+  }
+  public void setUnitsOnHand(int units){
+    unitsOnHand = units;
+  }
+  public int getUnitsOnHand(){
+    return unitsOnHand;
+  }
+}

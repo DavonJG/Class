@@ -1,0 +1,18 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw3
+> run Boxcar
+**********************
+ Volume & get + set test: 
+**********************
+b1.volume() = 5170.0
+b1.getLength() * b1.getHeight() * b1.getWidth() = 5170.0
+b2.volume() = 5940.0
+Changing b1 length to 60, height to 9, and width to 11...
+b1.getLength() = 60.0
+b1.getHeight() = 9.0
+b1.getWidth() = 11.0
+**************************************************************
+Testing extenion of RailroadCar by setting weight to 999 and yearMade to 1950...
+**************************************************************
+weight = 999.0
+yearMade = 1950
+> 

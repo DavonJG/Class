@@ -1,0 +1,33 @@
+public class Temperature{
+  private double ftemp;
+  private double ctemp;
+  private double ktemp;
+  public Temperature(double f){
+    ftemp = f;
+  }
+  public Temperature(double temp, char type){
+    if(type=='C'){
+      ftemp = ((9.0*temp)/5.0) + 32.0;
+    }
+    else if(type=='K'){
+      ftemp = ((9.0*(temp-273.0))/5.0)+32;
+    }
+    else if(type=='F'){
+      ftemp = temp;
+    }
+  }
+  public void setFahrenheit(double f){
+    ftemp = f;
+  }
+  public double getFahrenheit(){
+    return ftemp;
+  }
+  public double getCelcius(){
+    ctemp = (5.0/9.0)*(ftemp-32);
+    return ctemp;
+  }
+  public double getKelvin(){
+    ktemp = ((5.0/9.0)*(ftemp-32)) + 273;
+    return ktemp;
+  }
+}

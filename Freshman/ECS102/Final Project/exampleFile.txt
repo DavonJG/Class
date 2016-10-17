@@ -1,0 +1,25 @@
+Davon
+Grant
+Computer Science
+3.24
+ECS100, ECS101, ECS102, WRT105, PSY205, MAT295
+Jae
+Oh
+Physics
+3.97
+PHY356, CIS252, PHY357, WRT205, SOC101 
+Marjory
+Baruch
+Computer Science
+4.0
+ECS102, CIS452, WRT395, AAS232
+Jane
+Doe
+Psychology
+2.39
+AAS200, PSY395, ACC256, PSY499 , CHM325
+Justin
+Kowal
+Pre-Med
+3.74
+BIO316, BIO345, AST180, PTG203, PED213

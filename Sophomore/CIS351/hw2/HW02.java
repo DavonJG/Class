@@ -1,0 +1,196 @@
+import java.util.Arrays;
+import java.lang.Math; //import Math module used in Exercise 3
+
+public class HW02 {
+  /*************************************************************************************************
+    *                                       HOMEWORK EXCERCISES
+    * *********************************************************************************************/
+  //////////////////    EXCERCISE 1    //////////////////////
+  // factIter(n) = n!, computed iteratively
+  public static int factIter(int n) {
+    int result = 1;
+    for(int i=2; i<=n; i++){ //loop until i is greater than the argument
+      result = result * i; //multiply the current result by the next number
+    }
+    return result;
+  }
+  
+  //////////////////    EXCERCISE 2    //////////////////////
+  // factRec(n) = n!, computed via a recursion
+  public static int factRec(int n) {
+    switch(n){ //switch statement that handles the factorial via recursion.
+      case 0: case 1: return 1;
+      default: return n * factRec(n-1);
+    }
+  } 
+  
+  //////////////////////////////////////////////////////////
+  // formatPrice
+  public static String formatPrice(int[] price) {
+    return (price[0]+"/"+price[1]+"/"+price[2]);
+  }  
+  
+  //////////////////    EXCERCISE 4    //////////////////////
+  // LSD tally
+  public static int[] tally(int[][] price) {
+    int shillings = 0;
+    int pounds = 0;
+    int pennies = 0;
+    int[] ans = {0,0,0};
+    
+    //add all of the price values into its corresponding section (pounds, shillings, pennies)
+    for(int i=0; i< price.length; i++){
+      for(int x=0; x < 3; x++){
+        if(x==0){ // calculate pounds
+          pounds += price[i][x];
+        }
+        else if(x==1){ //calculate shillings
+          shillings += price[i][x];
+        }
+        else if(x==2){//calculate pennies
+          pennies += price[i][x];
+        }
+      }
+    }
+    
+    //correct all of the raw price values into correct units by carrying units over.
+    while(pennies > 12){
+      shillings ++;
+      pennies = pennies - 12;
+    }
+    while(shillings > 20){
+      pounds++;
+      shillings = shillings - 20;
+    }
+    
+    //set the values into the ans array.
+    ans[0] = pounds;
+    ans[1] = shillings;
+    ans[2] = pennies;
+    return ans;  // FIX ME!!!
+  }
+  
+  //////////////////    EXCERCISE 3    //////////////////////
+  // the monthly payment problem, all based on the formual found at 
+  // https://en.wikipedia.org/wiki/Amortization_calculator
+  
+  public static double payMonthly(double prin, double apr, int yrs) {
+    double paymentMonths = yrs * 12;
+    double monthlyInterestRate;
+    double monthlyPayment = 0.0;
+     /*********************************************
+     * if the apr is above 0, follow the formula on the wiki page.
+     * In this case, A = monthlyPayment, P = prin, i = monthlyInterestRate, n = paymentMonths
+     * *******************************************/
+    if(apr>0.0){
+      monthlyInterestRate = apr / paymentMonths;
+      monthlyPayment = prin * (monthlyInterestRate + (monthlyInterestRate/(Math.pow(1+monthlyInterestRate, paymentMonths) - 1)));
+    }
+    else{ //if the apr is 0 then simply return P / n 
+      monthlyPayment = prin / paymentMonths;
+    }
+    return monthlyPayment;
+  }
+  
+  public static void testPay(double prin,double arp,int yrs) {
+    System.out.println("For a loan of "+prin+" at interest rate "+arp+
+                       " (APR) for "+yrs+ " years, ");
+    System.out.println("  the monthly payment is: "
+                         + payMonthly(prin,arp,yrs) + "\n");
+  }
+  
+  //////////////////    EXCERCISE 5    //////////////////////
+  // days(y,m) = the number of days in month n of year y
+  public static int days(int year, int month) {
+    switch(month){
+      case 4: case 6: case 9:  case 11: return 30; // handle the 30 day months first
+      case 2: //if the month is February, find out if the user enters a leap year
+        if((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0)){
+        return 29;
+      }
+        else{ //if it isn't return 28 days.
+          return 28;
+        }
+      default: return 31; //if the user doesn't enter February or a 30 day month, then it must be a 31 day month.
+    }
+  }
+    // Thirty days have September, April, June and November. 
+    // All the rest have thirty-one, 
+    // Except February the only one  
+    // Which Leap Years change each fourth time  
+    // From twenty-eight to twenty-nine. 
+    // Century 100s don't always leap, 
+    // each 400 years that leap we keep
+  
+  /*************************************************************************************************
+    *                                       TESTING
+    * *********************************************************************************************/
+  //////////////////////////////////////////////////////////
+  // I little method for printing out tests for problem 5.
+  public static void testDays(int year, int month) {
+    System.out.println(month+"/"+year+" has " + 
+                       days(year,month)+" days");
+  }
+  
+  //////////////////////////////////////////////////////////
+  /**
+   * The main method for testing the assignment's methods.
+   */
+  public static void main(String argv[]) {
+    
+    /////////////////////////////////////////////////////////
+    System.out.println("\n**Tests for Problem 1**");
+    for (int i = 1; i<=10; i++) 
+      System.out.println("factIter("+i+") =\t"+ factIter(i));
+    
+    /////////////////////////////////////////////////////////
+    System.out.println("\n**Tests for Problem 2**");
+    for (int i = 1; i<=10; i++) 
+      System.out.println("factRec("+i+") =\t"+ factRec(i));
+    
+    /////////////////////////////////////////////////////////
+    System.out.println("\n**Tests for Problem 3**");
+    testPay(10000, 0.00, 3);
+    testPay(10000, 0.02, 3);
+    testPay(10000, 0.06, 3);
+    testPay(10000, 0.30, 3);
+    testPay(10000, 0.02, 4);
+    testPay(10000, 0.06, 4);
+    testPay(10000, 0.20, 4);
+    
+    
+    /////////////////////////////////////////////////////////
+    System.out.println("\n**Tests for Problem 4**");
+    int[][] p1 = {{1,12,11},{0,14,2},{1,17,11},{0,4,10},{2,3,10},
+      {0,13,9},{1,17,1},{1,13,1},{1,6,5},{2,3,3}};
+    // NOTE: p1[0][0] = 1, p1[0][1] = 12, p1[0][2] = 11, p1[1][0] = 0, ...
+    int[][] p2 = {{1,17,1},{1,17,11},{0,4,11},{0,16,3},{2,14,5},
+      {0,16,2},{1,18,10},{2,9,1},{0,10,11},{1,4,4}};
+    int[][] p3 = {{2,3,3},{0,11,0},{1,16,10},{1,0,6},{1,1,5},
+      {1,8,1},{1,14,3},{0,14,0},{0,15,10},{0,10,2}};
+    int[][] p4 = {{0,17,8},{0,16,9},{1,2,6},{0,10,11},{0,10,5},
+      {0,9,2},{1,13,6},{0,12,7},{0,2,5},{2,10,10}};
+    int[][] p5 = {{0,4,11},{2,7,10},{0,15,5},{1,13,4},{0,10,0},
+      {2,4,9},{0,17,1},{1,15,3},{2,9,6},{2,14,5}};
+    System.out.println("\nLSD sums"); 
+    System.out.println("Sum 1 = "+formatPrice(tally(p1))); // answer: 14/7/3
+    System.out.println("Sum 2 = "+formatPrice(tally(p2))); // answer: 14/9/11
+    System.out.println("Sum 3 = "+formatPrice(tally(p3))); // answer: 11/15/4
+    System.out.println("Sum 4 = "+formatPrice(tally(p4))); // answer: 9/6/9
+    System.out.println("Sum 5 = "+formatPrice(tally(p5))); // answer: 15/12/6
+    
+    /////////////////////////////////////////////////////////
+    System.out.println("\n**Tests for Problem 5**");
+    testDays(1900,2);  // 28
+    testDays(2000,2);  // 29
+    testDays(2004,2);  // 29
+    testDays(2016,1);  // 31
+    testDays(2016,2);  // 29
+    testDays(2016,9);  // 30
+    testDays(2016,12); // 31
+    testDays(2100,2);  // 28
+    
+    
+  }
+  
+}

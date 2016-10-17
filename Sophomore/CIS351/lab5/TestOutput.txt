@@ -1,0 +1,85 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/lab5
+> run Test
+The array size is 100
+(i) 4.803297   (ii) 0.221200   (iii) 0.002212 
+Number of steps for Sort 1:         2212 
+(i) 1.873981   (ii) 0.086300   (iii) 0.000863 
+Number of steps for Sort 2:          863 
+(i) 1075.095990   (ii) 49.510000   (iii) 0.495100 
+Number of steps for Sort 3:       495100 
+(i) 1.708949   (ii) 0.078700   (iii) 0.000787 
+Number of steps for Sort 4:          787 
+The array size is 200
+(i) 9.393548   (ii) 0.248850   (iii) 0.001244 
+Number of steps for Sort 1:         9954 
+(i) 1.786416   (ii) 0.047325   (iii) 0.000237 
+Number of steps for Sort 2:         1893 
+(i) 3756.098139   (ii) 99.505000   (iii) 0.497525 
+Number of steps for Sort 3:      3980200 
+(i) 1.650524   (ii) 0.043725   (iii) 0.000219 
+Number of steps for Sort 4:         1749 
+The array size is 300
+(i) 13.145078   (ii) 0.249922   (iii) 0.000833 
+Number of steps for Sort 1:        22493 
+(i) 1.786534   (ii) 0.033967   (iii) 0.000113 
+Number of steps for Sort 2:         3057 
+(i) 7863.378416   (ii) 149.503333   (iii) 0.498344 
+Number of steps for Sort 3:     13455300 
+(i) 1.639847   (ii) 0.031178   (iii) 0.000104 
+Number of steps for Sort 4:         2806 
+The array size is 400
+(i) 17.238690   (ii) 0.258213   (iii) 0.000646 
+Number of steps for Sort 1:        41314 
+(i) 1.719112   (ii) 0.025750   (iii) 0.000064 
+Number of steps for Sort 2:         4120 
+(i) 13319.114112   (ii) 199.502500   (iii) 0.498756 
+Number of steps for Sort 3:     31920400 
+(i) 1.631070   (ii) 0.024431   (iii) 0.000061 
+Number of steps for Sort 4:         3909 
+The array size is 500
+(i) 19.694564   (ii) 0.244788   (iii) 0.000490 
+Number of steps for Sort 1:        61197 
+(i) 1.773241   (ii) 0.022040   (iii) 0.000044 
+Number of steps for Sort 2:         5510 
+(i) 20073.832175   (ii) 249.502000   (iii) 0.499004 
+Number of steps for Sort 3:     62375500 
+(i) 1.622628   (ii) 0.020168   (iii) 0.000040 
+Number of steps for Sort 4:         5042 
+The array size is 600
+(i) 23.437807   (ii) 0.249883   (iii) 0.000416 
+Number of steps for Sort 1:        89958 
+(i) 1.707851   (ii) 0.018208   (iii) 0.000030 
+Number of steps for Sort 2:         6555 
+(i) 28091.758029   (ii) 299.501667   (iii) 0.499169 
+Number of steps for Sort 3:    107820600 
+(i) 1.617703   (ii) 0.017247   (iii) 0.000029 
+Number of steps for Sort 4:         6209 
+The array size is 700
+(i) 26.162097   (ii) 0.244843   (iii) 0.000350 
+Number of steps for Sort 1:       119973 
+(i) 1.762196   (ii) 0.016492   (iii) 0.000024 
+Number of steps for Sort 2:         8081 
+(i) 37345.138128   (ii) 349.501429   (iii) 0.499288 
+Number of steps for Sort 3:    171255700 
+(i) 1.618926   (ii) 0.015151   (iii) 0.000022 
+Number of steps for Sort 4:         7424 
+The array size is 800
+(i) 30.371061   (ii) 0.253773   (iii) 0.000317 
+Number of steps for Sort 1:       162415 
+(i) 1.702978   (ii) 0.014230   (iii) 0.000018 
+Number of steps for Sort 2:         9107 
+(i) 47811.453084   (ii) 399.501250   (iii) 0.499377 
+Number of steps for Sort 3:    255680800 
+(i) 1.622757   (ii) 0.013559   (iii) 0.000017 
+Number of steps for Sort 4:         8678 
+The array size is 900
+(i) 33.335646   (ii) 0.251958   (iii) 0.000280 
+Number of steps for Sort 1:       204086 
+(i) 1.734193   (ii) 0.013107   (iii) 0.000015 
+Number of steps for Sort 2:        10617 
+(i) 59471.849852   (ii) 449.501111   (iii) 0.499446 
+Number of steps for Sort 3:    364095900 
+(i) 1.604500   (ii) 0.012127   (iii) 0.000013 
+Number of steps for Sort 4:         9823 
+(i) 0.217147   (ii) 0.010000   (iii) 0.000100 
+> 

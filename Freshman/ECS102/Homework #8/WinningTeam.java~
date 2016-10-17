@@ -1,0 +1,14 @@
+public class WinningTeam{
+  private String name;
+  private int yearWon;
+  public WinningTeam(String n, int year){
+    yearWon=year;
+    name=n;
+  }
+  public String getName(){
+    return name;
+  }
+  public int getYear(){
+    return yearWon;
+  }
+}

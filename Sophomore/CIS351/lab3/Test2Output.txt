@@ -1,0 +1,12 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/lab3
+> run Test2
+Box2 run on Fri Sep 23 16:52:28 EDT 2016
+x: 5  10
+y: 1  2
+x: 5  10
+y: 5  10
+x: 5  10
+y: 5  10
+z: 5  10
+One of the copys  is copying the original array while the other copy changes the aspects to that of the new objects.
+> 

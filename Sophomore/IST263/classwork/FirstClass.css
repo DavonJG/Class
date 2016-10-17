@@ -1,0 +1,12 @@
+body {
+	background:black;
+	color:white;
+	font-family:arial, sans-serif;
+}
+h1 {
+	font-variant:small-caps;
+	color:gray;
+}
+p {
+	font-style:italic;
+}

@@ -1,0 +1,29 @@
+/*  MultiplicationTable.java
+Davon Grant
+dgran101
+Section 4*/
+
+import java.util.Scanner;
+import java.io.*;
+
+public class MultiplicationTable{
+  public static void main(String[]args)throws IOException{
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter the upper limit:");
+    int input = scan.nextInt();
+    int temp;
+    PrintWriter tableFile = new PrintWriter("Multiplication"+input+".txt");
+    tableFile.println("WTF");
+    for(int counter = 1;counter<=input;counter++){
+      tableFile.println(counter + "\t");
+    }
+    for(int counter =1;counter<=input;counter++){
+      for(int counter2=1;counter<=input;counter++){
+        temp = counter*counter2;
+        tableFile.println(temp+"\t");
+      }
+      tableFile.println();
+    }
+  }
+}
+  

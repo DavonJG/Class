@@ -1,0 +1,61 @@
+3. Compute the course grade for the following students:
+	-Student X:
+		HW: 10	10	10	9	9	10	10	8 (each out of 10 pts)
+		LAB: 10	8	9	8	9	10	7	8	9	9	
+		     10	10	10	10	8	10	10	10	10	9
+			 10	10	10	10	9 (each out of 10 pts)
+		EXAM 1: 82 (out of 100)
+		EXAM 2: 88 (out of 100)
+		EXAM 3: 89 (out of 100)
+		FINAL PROJECT: 93 (out of 100)
+		
+		(70/80)*20 + (233/250)*15 + (259/300)*45 + (93/100)*20 = 88.93 (B+)
+		
+	-Student Y
+		HW: 0	0	5	10	0	3	4	0
+		LAB: 10	9	10	9	5	0	6	7	10	0
+			 0	10	4	0	9	0	3	0	0	4	
+			 0	0	0	0	8
+		EXAM 1: 95
+		EXAM 2: 70
+		EXAM 3: 42
+		FINAL PROJECT: (64)
+		
+		(22/80)*20 + (104/250)*15 +(207/300)*45 + (64/100)*20 = 55.59 (F)
+		
+4. Read Chapter 1 of Gaddis. Write answers to the following questions from end of Chapter 1 (Review Questions and Exercises).
+	Multiple Choice:
+		1. b. CPU
+		2. d. Bits
+		3. a. Address
+		4. c. Secondary Storage
+		5. b. A stream of binary numbers 
+		6. b. Applet
+		7. c. Key Words
+		8. d. Operators
+		9. a. Punctuation
+		10. b. Programmer-defined names
+		11. a. Syntax
+		12. c. Variable
+		13. c. Source code
+		14. d. Java Virtual Machine
+	Find the Error:
+		1."area = width x length" should be after both the width and the length are inputted, as width and length do not exist beforehand.
+	Algorithm Workbench:
+		1. Display "What is the maximum amount of credit?"
+			Store the input in maxCredit
+		   Display "How much credit have you already used?"
+			Store the input in usedCredit
+		   availableCredit = maxCredit - usedCredit
+		   Display availableCredit 
+		2. Display "What is the retail price of the item?"
+			Store the input in retailPrice
+		   Display "What is the sales tax rate? (Insert as a fraction out of 100)"
+			Store the input in salesTaxRate
+		   salesTax = retailPrice * salesTaxRate
+		   finalPrice = retailPrice + salesTax
+		   Display salesTax
+		   Display finalPrice
+	Predict the Result:
+		1. 7
+		2. 28

@@ -1,0 +1,37 @@
+public class Tankcar extends RailroadCar{
+  private double length, radius;
+  
+  public static void main(String[]args){
+  }
+  
+  public Tankcar(){
+    length = 47;
+    radius = 5.0;
+  }
+  
+  public Tankcar(double l, double r){
+    length = l;
+    radius = r;
+  }
+  
+  protected double volume(){
+    double v = (Math.pow(this.radius, 2)) * this.length * Math.PI;
+    return v;
+  }
+  
+  protected double getLength(){
+    return length;
+  }
+  
+  protected double getRadius(){
+    return radius;
+  }
+  
+  protected void setLength(double l){
+    length = l;
+  }
+  protected void setRadius(double r){
+    radius = r;
+  }
+}
+  

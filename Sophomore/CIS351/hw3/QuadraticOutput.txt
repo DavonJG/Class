@@ -1,0 +1,51 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw3
+> run Quadratic
+0.0*x^2 + 0.0*x + 0.0 has:
+  infinitely many roots
+0.0*x^2 + 0.0*x + 1.0 has:
+  no roots
+0.0*x^2 + -1.0*x + 1.0 has:
+  two roots: -Infinity and 1.0
+1.0*x^2 + -1.0*x + 1.0 has:
+  no roots
+1.0*x^2 + -2.0*x + 1.0 has:
+  one root: 0.0
+1.0*x^2 + -3.0*x + 1.0 has:
+  two roots: 0.38196601125010515 and 2.6180339887498953
+------------------ Additional Tests ------------------
+*********************
+****eval() method****
+*********************
+Quadratic x:
+a = 1.0
+b = 2.0
+c = 3.0
+x.eval(3) = 12.0
+x.eval(4) = 15.0
+*********************
+***scale() method:***
+*********************
+Quadratic x:
+a = 1.0
+b = 2.0
+c = 3.0
+Quadratic x scaled by 3:
+a = 3.0
+b = 6.0
+c = 9.0
+*********************
+****sum() method****
+*********************
+Quadratic x:
+a = 1.0
+b = 2.0
+c = 3.0
+Quadratic y:
+a = 4.0
+b = 6.0
+c = 7.0
+Quadratic summed:
+a = 5.0
+b = 8.0
+c = 10.0
+> 

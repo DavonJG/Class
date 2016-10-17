@@ -1,0 +1,10 @@
+Who was the first president of the US?
+What is the capital of New York State?
+How much is 100-1?
+Which is bigger, an elephant or an ant?
+How many feet in a mile?
+How many meters in a kilometer?
+What city is Syracuse University in?
+Which reads from a file: a Scanner or a PrintWriter?
+Fill in the blank:  Professor ____ teaches this course.
+Which is bigger, the sun or the moon?

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class StockProcessor{
+  public static void main(String[]args) throws IOException{
+    String fileName;
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Hello! What is the name of the file that we will be working with?");
+    fileName=  scan.nextLine();
+    File inputFile = new File(fileName+".txt");
+    Scanner fileScan = new Scanner(inputFile);
+    PrintWriter printer = new PrintWriter(fileName+"Profit.txt");
+    String name;
+    double pp, pc, sc, sp;
+    int ns;
+    double finalProfit=0.0;
+    int counter = 0;
+    for(counter=0;counter<???;counter++){
+      name = fileScan.nextLine();
+      ns = fileScan.nextInt();
+      pp = fileScan.nextDouble();
+      pc = fileScan.nextDouble();
+      sp = fileScan.nextDouble();
+      sc = fileScan.nextDouble();
+      finalProfit += computeProfit(pp,pc,ns,sc,sp);
+    }
+    System.out.println("There are "+counter+" stocks. The total profit is "+finalProfit);
+  }
+  
+  public static double computeProfit(double pp, double pc, int ns, double sc, double sp){
+    double finalProfit = (((ns*sp)-sc)-((ns*pp)+pc));
+    return finalProfit;
+  }
+}

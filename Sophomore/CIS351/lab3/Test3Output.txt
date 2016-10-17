@@ -1,0 +1,8 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/lab3
+> run Test3
+Fri Sep 23 15:21:44 EDT 2016
+x: 34
+y: 8
+z: 75
+A displayed above, the timestamp is only displayed once even though there are 3 Box3's created.
+> 

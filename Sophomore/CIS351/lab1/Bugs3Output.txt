@@ -1,0 +1,5 @@
+Welcome to DrJava.  Working directory is /home/davon/Documents/Class/CIS351/lab1
+> run Bugs3
+Lift off!
+-9
+> 

@@ -1,0 +1,124 @@
+body{
+	background: #C0C0C0;
+	overflow: auto;
+}
+
+.container{
+	width:1000px;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(255,255,255);
+	overflow: auto;
+}
+
+.header{
+	width:985px;
+	margin:5px;
+	height:145px;
+	font-weight: bold;
+	padding: 5px
+}
+
+.main-story{
+	width:646px;
+	margin:5px;
+	height:295px;
+	float:left;
+	padding: 5px;
+}
+
+.play-button{
+	position: absolute;
+	margin-left: 235px;
+	margin-top: 123px;
+	border-radius: 30px;
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+.play-button p{
+	position:absolute;
+	top: -20px;
+	left: 54px;
+}
+
+
+
+.title-bar{
+	color: rgb(255,255,255);
+	width: 313px;
+	margin: 5px;
+	margin-top: 10px;
+	padding: 5px;
+	height: 30px;
+	float: left;
+	line-height: 0px;
+	background: rgb(57,62,64);
+}
+
+.secondary-story{
+	width:314px;
+	margin:5px;
+	height:240px;
+	float:right;
+	padding: 5px;
+}
+
+.category-stories-1{
+	width: 313px;
+	margin: 5px;
+	height: 240px;
+	float : left;
+	padding: 5px;
+}
+
+.category-stories-2{
+	width: 313px;
+	margin: 5px;
+	height: 240px;
+	float : left;
+	padding: 5px;
+}
+
+.category-stories-3{
+	width: 313px;
+	margin: 5px;
+	height: 240px;
+	float : left;
+	padding: 5px;
+}
+
+.foot{
+	color: rgb(255,255,255);
+	width: 480px;
+	margin: 5px;
+	height: 140px;
+	background: rgb(61,180,219);
+	float: left;
+	line-height: 35px;
+	font-size: 30px;
+	padding: 5px;
+}
+
+.secondfoot{
+	position: relative;
+	color: rgb(255,255,255);
+	width: 480px;
+	margin: 5px;
+	height: 140px;
+	float: left;
+	padding: 5px;
+}
+
+.footer-overlay{
+	position: absolute;
+	background: rgba(0,0,0,0.3);
+	width: 460px;
+	float:left;
+	bottom:0px;
+	margin-left: 10px;
+}

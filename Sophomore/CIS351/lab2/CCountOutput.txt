@@ -1,0 +1,15 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/lab2
+> run CCount
+Name of the input file:  [DrJava Input Box]
+That file doesn't exist! Try again.
+ [DrJava Input Box]
+That file has 4673 characters.
+> 
+
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/lab2
+> run CCount
+Name of the input file:  [DrJava Input Box]
+That file doesn't exist! Try again.
+ [DrJava Input Box]
+Sorry, too many bad inputs.
+> 

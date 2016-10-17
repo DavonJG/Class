@@ -1,0 +1,59 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/lab4
+> run Lab4
+  >> Entering: fact with: argument n = 4
+    >> Entering: fact with: argument n = 3
+      >> Entering: fact with: argument n = 2
+        >> Entering: fact with: argument n = 1
+          >> Entering: fact with: argument n = 0
+        << Leaving:  fact with result = 1
+      << Leaving:  fact with result = 1
+    << Leaving:  fact with result = 2
+  << Leaving:  fact with result = 6
+<< Leaving:  fact with result = 24
+fact(4) = 24
+
+  >> Entering: even with: argument n = 4
+    >> Entering: odd with: argument n = 3
+      >> Entering: even with: argument n = 2
+        >> Entering: odd with: argument n = 1
+          >> Entering: even with: argument n = 0
+        << Leaving:  even  with result = true
+      << Leaving:  odd  with result = true
+    << Leaving:  even  with result = true
+  << Leaving:  odd  with result = true
+<< Leaving:  even  with result = true
+Even(4) = true
+
+  >> Entering: fib with: argument n = 5
+    >> Entering: fib with: argument n = 3
+      >> Entering: fib with: argument n = 1
+    << Leaving:  fib  with result = 1
+      >> Entering: fib with: argument n = 2
+        >> Entering: fib with: argument n = 0
+      << Leaving:  fib  with result = 0
+        >> Entering: fib with: argument n = 1
+      << Leaving:  fib  with result = 1
+    << Leaving:  fib  with result = 1
+  << Leaving:  fib  with result = 2
+    >> Entering: fib with: argument n = 4
+      >> Entering: fib with: argument n = 2
+        >> Entering: fib with: argument n = 0
+      << Leaving:  fib  with result = 0
+        >> Entering: fib with: argument n = 1
+      << Leaving:  fib  with result = 1
+    << Leaving:  fib  with result = 1
+      >> Entering: fib with: argument n = 3
+        >> Entering: fib with: argument n = 1
+      << Leaving:  fib  with result = 1
+        >> Entering: fib with: argument n = 2
+          >> Entering: fib with: argument n = 0
+        << Leaving:  fib  with result = 0
+          >> Entering: fib with: argument n = 1
+        << Leaving:  fib  with result = 1
+      << Leaving:  fib  with result = 1
+    << Leaving:  fib  with result = 2
+  << Leaving:  fib  with result = 3
+<< Leaving:  fib  with result = 5
+fib(5) = 5
+
+> 

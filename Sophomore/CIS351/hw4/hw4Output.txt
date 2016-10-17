@@ -1,0 +1,106 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw4
+> run Hw04
+
+TESTS OF THE ArrayStack CLASS
+
+**1** Running tests for contains
+  a contains 0
+  a doesn't contain 1
+  a contains 2
+  a doesn't contain 3
+  a contains 4
+  a doesn't contain 5
+  a contains 6
+  a doesn't contain 7
+  a contains 8
+  a doesn't contain 9
+  a contains 10
+
+**2** Running tests for count
+  a.count(0) = 1
+  a.count(1) = 0
+  a.count(2) = 2
+  a.count(3) = 0
+  a.count(4) = 1
+  a.count(5) = 0
+  a.count(6) = 5
+  a.count(7) = 0
+  a.count(8) = 2
+  a.count(9) = 0
+  a.count(10) = 2
+
+**3** Running tests for delete
+  a.count(0) = 0
+  a.count(1) = 0
+  a.count(2) = 1
+  a.count(3) = 0
+  a.count(4) = 0
+  a.count(5) = 0
+  a.count(6) = 4
+  a.count(7) = 0
+  a.count(8) = 1
+  a.count(9) = 0
+  a.count(10) = 1
+
+**4** Running tests for drop
+  Checking a0.drop(0)	 Passed
+  Checking a0.drop(4)	 Passed
+  Checking a0.drop(2)	 Passed
+  Checking a0.drop(5)	 Passed
+  Checking a0.drop(5)	 Passed
+
+**5** Running tests for locationOf
+  Checking as.locationsOf(1)	 Passed
+  Checking as.locationsOf(2)	 Passed
+  Checking as.locationsOf(3)	 Passed
+  Checking as.locationsOf(4)	 Passed
+  Checking as.locationsOf(5)	 Passed
+  Checking as.locationsOf(6)	 Passed
+  Checking as.locationsOf(7)	 Passed
+  Checking as.locationsOf(8)	 Passed
+  Checking as.locationsOf(9)	 Passed
+
+
+TESTS OF THE TimeSeries CLASS
+
+**6** Running tests for timesAbove
+  Checking ts1.timesAbove(i,0,6) for i=0,...,9
+  Checking ts1.timesAbove(i,1,4) for i=0,...,9
+  Testing timesAbove's execeptions
+Time interval was out of bounds! Returning 0...
+0
+Time interval was out of bounds! Returning 0...
+0
+
+**7** Running tests for oscillation
+  Checking ts2.oscillation(i,tst2.length()-1) for i=0,...,tst2.length()-1 
+  Checking ts2.oscillation(0,i) for i=0,...,tst2.length()-1 
+  Testing oscillation's execeptions
+Time interval was out of bounds! Returning 0...
+0
+Time interval was out of bounds! Returning 0...
+0
+
+**8** Running tests for runningAvg
+  Checking ts2.runningAvg(1)
+  Checking ts2.runningAvg(2)
+  Checking ts2.runningAvg(3)
+  Checking ts2.runningAvg(4)
+  Checking ts2.runningAvg(5)
+  Checking ts2.runningAvg(6)
+  Checking ts2.runningAvg(7)
+  Checking ts2.runningAvg(8)
+  Checking ts2.runningAvg(9)
+  Checking ts2.runningAvg(10)
+  Checking ts2.runningAvg(11)
+  Checking ts2.runningAvg(12)
+  Checking ts2.runningAvg(13)
+  Checking ts2.runningAvg(14)
+  Checking ts2.runningAvg(15)
+  Checking ts2.runningAvg(16)
+  Checking ts2.runningAvg(17)
+  Checking ts2.runningAvg(18)
+  Testing runningAvg's execeptions
+[]
+[]
+> 

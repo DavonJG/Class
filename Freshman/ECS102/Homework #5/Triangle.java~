@@ -1,0 +1,33 @@
+/*Triangle.java
+Davon Grant
+dgran101
+Section 4
+*/
+import java.util.Random;
+
+public class Triangle{
+  public static void main(String[]args){
+    Random gen = new Random();
+    String symbols = "#*&@";
+    int symTemp = gen.nextInt(4);
+    char symbol = symbols.charAt(symTemp);
+    int numTemp = gen.nextInt(9)+3;
+    //going up
+    for(int counter=1;counter<numTemp;counter++){
+      for(int counter2=1; counter2<=counter; counter2++){
+        System.out.print(symbol);
+      }
+      System.out.println();
+    }
+    
+    //going down
+    for(int counter=1;counter<numTemp;counter++){
+      for(int counter2=1; counter2<=counter; counter2++){
+        System.out.print(symbol);
+      }
+      System.out.println();
+    }
+    //for(int counter=numTemp-1;counter>0;counter--){
+      //System.out.println(symbol);
+  }
+}

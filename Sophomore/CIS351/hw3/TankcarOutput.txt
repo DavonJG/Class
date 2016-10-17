@@ -1,0 +1,15 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw3
+> run Tankcar
+**********************
+ Volume & get + set test: 
+**********************
+t1.volume() = 3691.371367968007
+Math.pow(t1.radius, 2)) * t1.length * Math.PI = 3691.371367968007
+t2.volume() = 1570.7963267948965
+Changing t1 length to 99, radius to 8...
+t1.getLength() = 99.0
+t1.getRadius() = 8.0
+Testing extenion of RailroadCar by setting weight to 850 and yearMade to 1999...
+weight = 850.0
+yearMade = 1999
+> 

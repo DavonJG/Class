@@ -1,0 +1,57 @@
+/*  QuizGame.java
+Davon Grant
+dgran101
+Section 4*/
+
+import javax.swing.JOptionPane;
+import java.io.*;
+import java.util.Scanner;
+import java.util.Random;
+
+public class QuizGame{
+  public static void main(String[]args) throws IOException{
+    Random generator = new Random();
+    File quizQuestions = new File("QuizQuestions.txt");
+    Scanner questionScan = new Scanner(quizQuestions);
+    File quizAnswers = new File("QuizAnswers.txt");
+    Scanner answerScan = new Scanner(quizAnswers);
+    String questionString = JOptionPane.showInputDialog("Welcome,\nHow many questions do you want? (1-10)");
+    int numQuestions = Integer.parseInt(questionString);
+    do{
+      JOptionPane.showMessageDialog(null, "Try again. Make sure you enter a number between 1-10.");
+    }
+    while((numQuestions>10)&&(numQuestions<0));
+    int correctAnswers = 0;
+    //Loops for asking questions and recording if the answers are correct.
+    for(int counter = 0;counter<numQuestions;counter++){
+      String correctMessage = "";
+      String incorrectMessage = "";
+      String currentQuestion = questionScan.nextLine();
+      String temp = JOptionPane.showInputDialog(currentQuestion);
+      if(temp == answerScan.nextLine()){
+        int messageTemp = generator.nextInt(3);
+        if(messageTemp == 0){
+          correctMessage = "Great";
+        }
+        else if(messageTemp == 1){
+          correctMessage = "Excellent";
+        }
+        else if(messageTemp == 2){
+          correctMessage = "Wow";
+        }
+        JOptionPane.showMessageDialog(null, correctMessage);
+        correctAnswers++;
+      }
+      else{
+        int messageTemp = generator.nextInt(2);
+        if(messageTemp == 0){
+          incorrectMessage = "Sorry, incorrect.";
+        }
+        else if(messageTemp == 1){
+          incorrectMessage = "Wrong";
+        }
+        JOptionPane.showMessageDialog(null, incorrectMessage);
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw2
+> run HW02
+
+**Tests for Problem 1**
+factIter(1) =	1
+factIter(2) =	2
+factIter(3) =	6
+factIter(4) =	24
+factIter(5) =	120
+factIter(6) =	720
+factIter(7) =	5040
+factIter(8) =	40320
+factIter(9) =	362880
+factIter(10) =	3628800
+
+**Tests for Problem 2**
+factRec(1) =	1
+factRec(2) =	2
+factRec(3) =	6
+factRec(4) =	24
+factRec(5) =	120
+factRec(6) =	720
+factRec(7) =	5040
+factRec(8) =	40320
+factRec(9) =	362880
+factRec(10) =	3628800
+
+**Tests for Problem 3**
+For a loan of 10000.0 at interest rate 0.0 (APR) for 3 years, 
+  the monthly payment is: 277.77777777777777
+
+For a loan of 10000.0 at interest rate 0.02 (APR) for 3 years, 
+  the monthly payment is: 280.6419655333516
+
+For a loan of 10000.0 at interest rate 0.06 (APR) for 3 years, 
+  the monthly payment is: 286.42578732455763
+
+For a loan of 10000.0 at interest rate 0.3 (APR) for 3 years, 
+  the monthly payment is: 322.6718719383757
+
+For a loan of 10000.0 at interest rate 0.02 (APR) for 4 years, 
+  the monthly payment is: 210.4670093827778
+
+For a loan of 10000.0 at interest rate 0.06 (APR) for 4 years, 
+  the monthly payment is: 214.77597178423875
+
+For a loan of 10000.0 at interest rate 0.2 (APR) for 4 years, 
+  the monthly payment is: 230.29293570646584
+
+
+**Tests for Problem 4**
+
+LSD sums
+Sum 1 = 14/7/3
+Sum 2 = 14/9/11
+Sum 3 = 11/15/4
+Sum 4 = 9/6/9
+Sum 5 = 15/12/6
+
+**Tests for Problem 5**
+2/1900 has 28 days
+2/2000 has 29 days
+2/2004 has 29 days
+1/2016 has 31 days
+2/2016 has 29 days
+9/2016 has 30 days
+12/2016 has 31 days
+2/2100 has 28 days
+> 

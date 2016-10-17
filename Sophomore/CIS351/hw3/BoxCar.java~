@@ -1,0 +1,8 @@
+public class BoxCar{
+  double height;
+  double width;
+  double length;
+  public double volume(){
+    double v = this.height * this.width * this.length;
+    return v;
+  }

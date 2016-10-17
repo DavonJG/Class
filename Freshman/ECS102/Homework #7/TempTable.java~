@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class TempTable{
+  public static void main(String[]args){
+    double fahrenheitTemp;
+    double kelvinTemp;
+    double celsiusTemp;
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Hello. Please choose a scale. (Fahrenheit, Celsius, or Kelvin)");
+    String selection = scan.nextLine();
+    if(selection.equalsIgnoreCase("Fahrenheit")){
+      System.out.println("Fahrenheit\tCelsius\tKelvin");
+      for(double i=0; i<101.0; i+=5.0){
+        Temperature temp = new Temperature(i, 'F');
+        fahrenheitTemp = temp.getFahrenheit();
+        kelvinTemp = temp.getKelvin();
+        celsiusTemp = temp.getCelsius();
+        System.out.println(fahrenheitTemp+"\t"+celsiusTemp+"\t"+kelvinTemp);
+      }
+    }
+    else if(selection.equalsIgnoreCase("Celsius")){
+    }
+    else if(selection.equalsIgnoreCase("Kelvin")){
+    }
+  }
+            

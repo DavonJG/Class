@@ -1,0 +1,6 @@
+public class RailroadCar{
+  private double weight;
+  private int yearMade;
+  public RailroadCar(){
+  }
+}

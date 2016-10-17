@@ -1,0 +1,4 @@
+Welcome to DrJava.  Working directory is /home/davon/Documents/Class/CIS351/hw1
+> run Sample2
+Hello, World again!
+> 
