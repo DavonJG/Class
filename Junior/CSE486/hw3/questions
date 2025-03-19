@@ -1,0 +1,14 @@
+Question 3.1
+4 HelloThreads are created.
+
+Question 3.2
+The output of the program is "Hello from thread n" with n being the number of the thread that is created. None of the threads were interrupted when they were being created.
+
+Question 6.1
+4 HelloThreads are created.
+
+Question 6.2
+Each HelloThread loops 99 times. The threads are randomly interrupted as they are looping.
+
+Question 9.1.1
+The program did not produce the result as intended because as the threads were running and placing numbers into the sharedBuffer[] indexes, they were being interrupted which resulted in 1's, 2's, 3's, and 4's being placed in the wrong ranges.

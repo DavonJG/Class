@@ -1,0 +1,25 @@
+PART A:
+
+1. 
+RUNNING (scheduler.cc:104-150)
+READY (scheduler.cc:56-64)
+BLOCKED (thread.cc:240-255)
+JUST_CREATED(thread.cc:36-48)
+
+2. scheduler.h:20-42
+
+3. 128 (page size) * 128 (number of physical pages) = 16384 MB (machine.h:30-38)
+
+4. Create a file in the userprog directory, then run nachos -x /userprog/<programname>
+
+Part 2:
+
+class Stack {
+  public:
+    Stack(int sz);    
+    ~Stack();         
+	void Push(T value);
+  private: 
+	bool Full();       
+    bool Empty();    
+}

@@ -1,0 +1,1936 @@
+Last login: Tue Apr 10 23:51:07 2018 from 10.1.236.244
+dgran101@lcs-vc-cis486:~$ ls
+nachos  nachos.tar
+dgran101@lcs-vc-cis486:~$ cd nachos/
+dgran101@lcs-vc-cis486:~/nachos$ ls
+c++example  code  coff2noff  COPYRIGHT
+dgran101@lcs-vc-cis486:~/nachos$ cd code/threads/
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ ls
+alarm.cc  kernel.cc  main.cc  MyThreadExample1.java  MyThreadExample.java  scheduler.h  switch.S  synch.h       synchlist.h  thread.h
+alarm.h   kernel.h   main.h   MyThreadExample2.java  scheduler.cc          switch.h     synch.cc  synchlist.cc  thread.cc    threadtest.cc
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ javac MyThreadExample.java
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ ls
+alarm.cc  HelloThread.class  kernel.h  main.h                 MyThreadExample2.java  MyThreadExample.java  scheduler.h  switch.S  synch.h       synchlist.h  thread.h
+alarm.h   kernel.cc          main.cc   MyThreadExample1.java  MyThreadExample.class  scheduler.cc          switch.h     synch.cc  synchlist.cc  thread.cc    threadtest.cc
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ java MyThreadExample
+Hello from thread 2
+Hello from thread 1
+Hello from thread 3
+Hello from thread 4
+dgran101@lcs-vc-cis486:~/nachos/code/threads$
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ javac MyThreadExample
+error: Class names, 'MyThreadExample', are only accepted if annotation processing is explicitly requested
+1 error
+dgran101@lcs-vc-cis486:~/nachos/code/threads$
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ javac MyThreadExample.java
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ java MyThreadExample
+Hello from thread 1
+Hello from thread 3
+Hello from thread 2
+Hello from thread 4
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ javac MyThreadExample1.java
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ java MyThreadExample1
+Hello from thread 1 looped 0 times
+
+Hello from thread 3 looped 0 times
+
+Hello from thread 2 looped 0 times
+
+Hello from thread 3 looped 1 times
+
+Hello from thread 3 looped 2 times
+
+Hello from thread 3 looped 3 times
+
+Hello from thread 3 looped 4 times
+
+Hello from thread 3 looped 5 times
+
+Hello from thread 1 looped 1 times
+
+Hello from thread 1 looped 2 times
+
+Hello from thread 1 looped 3 times
+
+Hello from thread 3 looped 6 times
+
+Hello from thread 4 looped 0 times
+
+Hello from thread 4 looped 1 times
+
+Hello from thread 4 looped 2 times
+
+Hello from thread 4 looped 3 times
+
+Hello from thread 4 looped 4 times
+
+Hello from thread 4 looped 5 times
+
+Hello from thread 4 looped 6 times
+
+Hello from thread 4 looped 7 times
+
+Hello from thread 4 looped 8 times
+
+Hello from thread 4 looped 9 times
+
+Hello from thread 4 looped 10 times
+
+Hello from thread 4 looped 11 times
+
+Hello from thread 2 looped 1 times
+
+Hello from thread 2 looped 2 times
+
+Hello from thread 2 looped 3 times
+
+Hello from thread 2 looped 4 times
+
+Hello from thread 2 looped 5 times
+
+Hello from thread 4 looped 12 times
+
+Hello from thread 4 looped 13 times
+
+Hello from thread 4 looped 14 times
+
+Hello from thread 4 looped 15 times
+
+Hello from thread 4 looped 16 times
+
+Hello from thread 4 looped 17 times
+
+Hello from thread 4 looped 18 times
+
+Hello from thread 4 looped 19 times
+
+Hello from thread 4 looped 20 times
+
+Hello from thread 4 looped 21 times
+
+Hello from thread 4 looped 22 times
+
+Hello from thread 3 looped 7 times
+
+Hello from thread 1 looped 4 times
+
+Hello from thread 3 looped 8 times
+
+Hello from thread 3 looped 9 times
+
+Hello from thread 3 looped 10 times
+
+Hello from thread 3 looped 11 times
+
+Hello from thread 3 looped 12 times
+
+Hello from thread 3 looped 13 times
+
+Hello from thread 3 looped 14 times
+
+Hello from thread 4 looped 23 times
+
+Hello from thread 4 looped 24 times
+
+Hello from thread 4 looped 25 times
+
+Hello from thread 4 looped 26 times
+
+Hello from thread 4 looped 27 times
+
+Hello from thread 4 looped 28 times
+
+Hello from thread 4 looped 29 times
+
+Hello from thread 4 looped 30 times
+
+Hello from thread 4 looped 31 times
+
+Hello from thread 2 looped 6 times
+
+Hello from thread 2 looped 7 times
+
+Hello from thread 2 looped 8 times
+
+Hello from thread 2 looped 9 times
+
+Hello from thread 2 looped 10 times
+
+Hello from thread 2 looped 11 times
+
+Hello from thread 2 looped 12 times
+
+Hello from thread 2 looped 13 times
+
+Hello from thread 2 looped 14 times
+
+Hello from thread 2 looped 15 times
+
+Hello from thread 2 looped 16 times
+
+Hello from thread 2 looped 17 times
+
+Hello from thread 2 looped 18 times
+
+Hello from thread 2 looped 19 times
+
+Hello from thread 2 looped 20 times
+
+Hello from thread 2 looped 21 times
+
+Hello from thread 2 looped 22 times
+
+Hello from thread 2 looped 23 times
+
+Hello from thread 2 looped 24 times
+
+Hello from thread 2 looped 25 times
+
+Hello from thread 2 looped 26 times
+
+Hello from thread 2 looped 27 times
+
+Hello from thread 2 looped 28 times
+
+Hello from thread 2 looped 29 times
+
+Hello from thread 2 looped 30 times
+
+Hello from thread 2 looped 31 times
+
+Hello from thread 4 looped 32 times
+
+Hello from thread 4 looped 33 times
+
+Hello from thread 4 looped 34 times
+
+Hello from thread 4 looped 35 times
+
+Hello from thread 4 looped 36 times
+
+Hello from thread 4 looped 37 times
+
+Hello from thread 4 looped 38 times
+
+Hello from thread 4 looped 39 times
+
+Hello from thread 4 looped 40 times
+
+Hello from thread 4 looped 41 times
+
+Hello from thread 4 looped 42 times
+
+Hello from thread 4 looped 43 times
+
+Hello from thread 4 looped 44 times
+
+Hello from thread 4 looped 45 times
+
+Hello from thread 4 looped 46 times
+
+Hello from thread 4 looped 47 times
+
+Hello from thread 4 looped 48 times
+
+Hello from thread 4 looped 49 times
+
+Hello from thread 4 looped 50 times
+
+Hello from thread 4 looped 51 times
+
+Hello from thread 4 looped 52 times
+
+Hello from thread 4 looped 53 times
+
+Hello from thread 4 looped 54 times
+
+Hello from thread 4 looped 55 times
+
+Hello from thread 4 looped 56 times
+
+Hello from thread 4 looped 57 times
+
+Hello from thread 4 looped 58 times
+
+Hello from thread 4 looped 59 times
+
+Hello from thread 4 looped 60 times
+
+Hello from thread 4 looped 61 times
+
+Hello from thread 4 looped 62 times
+
+Hello from thread 4 looped 63 times
+
+Hello from thread 4 looped 64 times
+
+Hello from thread 4 looped 65 times
+
+Hello from thread 4 looped 66 times
+
+Hello from thread 4 looped 67 times
+
+Hello from thread 4 looped 68 times
+
+Hello from thread 4 looped 69 times
+
+Hello from thread 3 looped 15 times
+
+Hello from thread 1 looped 5 times
+
+Hello from thread 3 looped 16 times
+
+Hello from thread 3 looped 17 times
+
+Hello from thread 3 looped 18 times
+
+Hello from thread 3 looped 19 times
+
+Hello from thread 3 looped 20 times
+
+Hello from thread 3 looped 21 times
+
+Hello from thread 3 looped 22 times
+
+Hello from thread 3 looped 23 times
+
+Hello from thread 3 looped 24 times
+
+Hello from thread 3 looped 25 times
+
+Hello from thread 3 looped 26 times
+
+Hello from thread 3 looped 27 times
+
+Hello from thread 3 looped 28 times
+
+Hello from thread 3 looped 29 times
+
+Hello from thread 3 looped 30 times
+
+Hello from thread 3 looped 31 times
+
+Hello from thread 4 looped 70 times
+
+Hello from thread 2 looped 32 times
+
+Hello from thread 2 looped 33 times
+
+Hello from thread 2 looped 34 times
+
+Hello from thread 4 looped 71 times
+
+Hello from thread 4 looped 72 times
+
+Hello from thread 3 looped 32 times
+
+Hello from thread 3 looped 33 times
+
+Hello from thread 1 looped 6 times
+
+Hello from thread 4 looped 73 times
+
+Hello from thread 4 looped 74 times
+
+Hello from thread 4 looped 75 times
+
+Hello from thread 4 looped 76 times
+
+Hello from thread 4 looped 77 times
+
+Hello from thread 4 looped 78 times
+
+Hello from thread 4 looped 79 times
+
+Hello from thread 4 looped 80 times
+
+Hello from thread 4 looped 81 times
+
+Hello from thread 4 looped 82 times
+
+Hello from thread 4 looped 83 times
+
+Hello from thread 2 looped 35 times
+
+Hello from thread 2 looped 36 times
+
+Hello from thread 2 looped 37 times
+
+Hello from thread 2 looped 38 times
+
+Hello from thread 4 looped 84 times
+
+Hello from thread 4 looped 85 times
+
+Hello from thread 4 looped 86 times
+
+Hello from thread 3 looped 34 times
+
+Hello from thread 3 looped 35 times
+
+Hello from thread 1 looped 7 times
+
+Hello from thread 1 looped 8 times
+
+Hello from thread 1 looped 9 times
+
+Hello from thread 1 looped 10 times
+
+Hello from thread 1 looped 11 times
+
+Hello from thread 1 looped 12 times
+
+Hello from thread 1 looped 13 times
+
+Hello from thread 1 looped 14 times
+
+Hello from thread 1 looped 15 times
+
+Hello from thread 1 looped 16 times
+
+Hello from thread 1 looped 17 times
+
+Hello from thread 1 looped 18 times
+
+Hello from thread 1 looped 19 times
+
+Hello from thread 1 looped 20 times
+
+Hello from thread 1 looped 21 times
+
+Hello from thread 1 looped 22 times
+
+Hello from thread 1 looped 23 times
+
+Hello from thread 1 looped 24 times
+
+Hello from thread 1 looped 25 times
+
+Hello from thread 1 looped 26 times
+
+Hello from thread 1 looped 27 times
+
+Hello from thread 1 looped 28 times
+
+Hello from thread 1 looped 29 times
+
+Hello from thread 1 looped 30 times
+
+Hello from thread 1 looped 31 times
+
+Hello from thread 1 looped 32 times
+
+Hello from thread 1 looped 33 times
+
+Hello from thread 1 looped 34 times
+
+Hello from thread 1 looped 35 times
+
+Hello from thread 1 looped 36 times
+
+Hello from thread 1 looped 37 times
+
+Hello from thread 1 looped 38 times
+
+Hello from thread 1 looped 39 times
+
+Hello from thread 1 looped 40 times
+
+Hello from thread 1 looped 41 times
+
+Hello from thread 1 looped 42 times
+
+Hello from thread 1 looped 43 times
+
+Hello from thread 1 looped 44 times
+
+Hello from thread 1 looped 45 times
+
+Hello from thread 1 looped 46 times
+
+Hello from thread 1 looped 47 times
+
+Hello from thread 1 looped 48 times
+
+Hello from thread 1 looped 49 times
+
+Hello from thread 1 looped 50 times
+
+Hello from thread 1 looped 51 times
+
+Hello from thread 1 looped 52 times
+
+Hello from thread 1 looped 53 times
+
+Hello from thread 1 looped 54 times
+
+Hello from thread 1 looped 55 times
+
+Hello from thread 1 looped 56 times
+
+Hello from thread 1 looped 57 times
+
+Hello from thread 1 looped 58 times
+
+Hello from thread 1 looped 59 times
+
+Hello from thread 1 looped 60 times
+
+Hello from thread 1 looped 61 times
+
+Hello from thread 1 looped 62 times
+
+Hello from thread 1 looped 63 times
+
+Hello from thread 1 looped 64 times
+
+Hello from thread 1 looped 65 times
+
+Hello from thread 1 looped 66 times
+
+Hello from thread 1 looped 67 times
+
+Hello from thread 1 looped 68 times
+
+Hello from thread 1 looped 69 times
+
+Hello from thread 1 looped 70 times
+
+Hello from thread 1 looped 71 times
+
+Hello from thread 1 looped 72 times
+
+Hello from thread 1 looped 73 times
+
+Hello from thread 1 looped 74 times
+
+Hello from thread 1 looped 75 times
+
+Hello from thread 1 looped 76 times
+
+Hello from thread 1 looped 77 times
+
+Hello from thread 1 looped 78 times
+
+Hello from thread 1 looped 79 times
+
+Hello from thread 1 looped 80 times
+
+Hello from thread 1 looped 81 times
+
+Hello from thread 1 looped 82 times
+
+Hello from thread 1 looped 83 times
+
+Hello from thread 1 looped 84 times
+
+Hello from thread 1 looped 85 times
+
+Hello from thread 1 looped 86 times
+
+Hello from thread 1 looped 87 times
+
+Hello from thread 1 looped 88 times
+
+Hello from thread 1 looped 89 times
+
+Hello from thread 3 looped 36 times
+
+Hello from thread 3 looped 37 times
+
+Hello from thread 3 looped 38 times
+
+Hello from thread 3 looped 39 times
+
+Hello from thread 3 looped 40 times
+
+Hello from thread 3 looped 41 times
+
+Hello from thread 3 looped 42 times
+
+Hello from thread 3 looped 43 times
+
+Hello from thread 3 looped 44 times
+
+Hello from thread 3 looped 45 times
+
+Hello from thread 3 looped 46 times
+
+Hello from thread 3 looped 47 times
+
+Hello from thread 3 looped 48 times
+
+Hello from thread 3 looped 49 times
+
+Hello from thread 3 looped 50 times
+
+Hello from thread 3 looped 51 times
+
+Hello from thread 3 looped 52 times
+
+Hello from thread 3 looped 53 times
+
+Hello from thread 3 looped 54 times
+
+Hello from thread 3 looped 55 times
+
+Hello from thread 3 looped 56 times
+
+Hello from thread 3 looped 57 times
+
+Hello from thread 3 looped 58 times
+
+Hello from thread 3 looped 59 times
+
+Hello from thread 3 looped 60 times
+
+Hello from thread 3 looped 61 times
+
+Hello from thread 3 looped 62 times
+
+Hello from thread 3 looped 63 times
+
+Hello from thread 3 looped 64 times
+
+Hello from thread 3 looped 65 times
+
+Hello from thread 3 looped 66 times
+
+Hello from thread 3 looped 67 times
+
+Hello from thread 3 looped 68 times
+
+Hello from thread 3 looped 69 times
+
+Hello from thread 3 looped 70 times
+
+Hello from thread 3 looped 71 times
+
+Hello from thread 3 looped 72 times
+
+Hello from thread 3 looped 73 times
+
+Hello from thread 3 looped 74 times
+
+Hello from thread 3 looped 75 times
+
+Hello from thread 3 looped 76 times
+
+Hello from thread 3 looped 77 times
+
+Hello from thread 3 looped 78 times
+
+Hello from thread 3 looped 79 times
+
+Hello from thread 3 looped 80 times
+
+Hello from thread 3 looped 81 times
+
+Hello from thread 3 looped 82 times
+
+Hello from thread 3 looped 83 times
+
+Hello from thread 3 looped 84 times
+
+Hello from thread 3 looped 85 times
+
+Hello from thread 3 looped 86 times
+
+Hello from thread 3 looped 87 times
+
+Hello from thread 3 looped 88 times
+
+Hello from thread 3 looped 89 times
+
+Hello from thread 3 looped 90 times
+
+Hello from thread 3 looped 91 times
+
+Hello from thread 3 looped 92 times
+
+Hello from thread 3 looped 93 times
+
+Hello from thread 3 looped 94 times
+
+Hello from thread 3 looped 95 times
+
+Hello from thread 3 looped 96 times
+
+Hello from thread 3 looped 97 times
+
+Hello from thread 3 looped 98 times
+
+Hello from thread 3 looped 99 times
+
+Hello from thread 4 looped 87 times
+
+Hello from thread 4 looped 88 times
+
+Hello from thread 4 looped 89 times
+
+Hello from thread 4 looped 90 times
+
+Hello from thread 4 looped 91 times
+
+Hello from thread 4 looped 92 times
+
+Hello from thread 4 looped 93 times
+
+Hello from thread 4 looped 94 times
+
+Hello from thread 4 looped 95 times
+
+Hello from thread 4 looped 96 times
+
+Hello from thread 4 looped 97 times
+
+Hello from thread 4 looped 98 times
+
+Hello from thread 4 looped 99 times
+
+Hello from thread 2 looped 39 times
+
+Hello from thread 2 looped 40 times
+
+Hello from thread 2 looped 41 times
+
+Hello from thread 1 looped 90 times
+
+Hello from thread 1 looped 91 times
+
+Hello from thread 1 looped 92 times
+
+Hello from thread 1 looped 93 times
+
+Hello from thread 1 looped 94 times
+
+Hello from thread 1 looped 95 times
+
+Hello from thread 1 looped 96 times
+
+Hello from thread 1 looped 97 times
+
+Hello from thread 1 looped 98 times
+
+Hello from thread 1 looped 99 times
+
+Hello from thread 2 looped 42 times
+
+Hello from thread 2 looped 43 times
+
+Hello from thread 2 looped 44 times
+
+Hello from thread 2 looped 45 times
+
+Hello from thread 2 looped 46 times
+
+Hello from thread 2 looped 47 times
+
+Hello from thread 2 looped 48 times
+
+Hello from thread 2 looped 49 times
+
+Hello from thread 2 looped 50 times
+
+Hello from thread 2 looped 51 times
+
+Hello from thread 2 looped 52 times
+
+Hello from thread 2 looped 53 times
+
+Hello from thread 2 looped 54 times
+
+Hello from thread 2 looped 55 times
+
+Hello from thread 2 looped 56 times
+
+Hello from thread 2 looped 57 times
+
+Hello from thread 2 looped 58 times
+
+Hello from thread 2 looped 59 times
+
+Hello from thread 2 looped 60 times
+
+Hello from thread 2 looped 61 times
+
+Hello from thread 2 looped 62 times
+
+Hello from thread 2 looped 63 times
+
+Hello from thread 2 looped 64 times
+
+Hello from thread 2 looped 65 times
+
+Hello from thread 2 looped 66 times
+
+Hello from thread 2 looped 67 times
+
+Hello from thread 2 looped 68 times
+
+Hello from thread 2 looped 69 times
+
+Hello from thread 2 looped 70 times
+
+Hello from thread 2 looped 71 times
+
+Hello from thread 2 looped 72 times
+
+Hello from thread 2 looped 73 times
+
+Hello from thread 2 looped 74 times
+
+Hello from thread 2 looped 75 times
+
+Hello from thread 2 looped 76 times
+
+Hello from thread 2 looped 77 times
+
+Hello from thread 2 looped 78 times
+
+Hello from thread 2 looped 79 times
+
+Hello from thread 2 looped 80 times
+
+Hello from thread 2 looped 81 times
+
+Hello from thread 2 looped 82 times
+
+Hello from thread 2 looped 83 times
+
+Hello from thread 2 looped 84 times
+
+Hello from thread 2 looped 85 times
+
+Hello from thread 2 looped 86 times
+
+Hello from thread 2 looped 87 times
+
+Hello from thread 2 looped 88 times
+
+Hello from thread 2 looped 89 times
+
+Hello from thread 2 looped 90 times
+
+Hello from thread 2 looped 91 times
+
+Hello from thread 2 looped 92 times
+
+Hello from thread 2 looped 93 times
+
+Hello from thread 2 looped 94 times
+
+Hello from thread 2 looped 95 times
+
+Hello from thread 2 looped 96 times
+
+Hello from thread 2 looped 97 times
+
+Hello from thread 2 looped 98 times
+
+Hello from thread 2 looped 99 times
+
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ javac MyThreadExample2.java
+dgran101@lcs-vc-cis486:~/nachos/code/threads$ java MyThreadExample2
+Thread 1 has written 1 to Global.sharedBuffer[0]
+
+Thread 1 has written 1 to Global.sharedBuffer[1]
+
+Thread 1 has written 1 to Global.sharedBuffer[2]
+
+Thread 1 has written 1 to Global.sharedBuffer[3]
+
+Thread 1 has written 1 to Global.sharedBuffer[4]
+
+Thread 1 has written 1 to Global.sharedBuffer[5]
+
+Thread 1 has written 1 to Global.sharedBuffer[6]
+
+Thread 1 has written 1 to Global.sharedBuffer[7]
+
+Thread 1 has written 1 to Global.sharedBuffer[8]
+
+Thread 1 has written 1 to Global.sharedBuffer[9]
+
+Thread 1 has written 1 to Global.sharedBuffer[10]
+
+Thread 1 has written 1 to Global.sharedBuffer[11]
+
+Thread 1 has written 1 to Global.sharedBuffer[12]
+
+Thread 1 has written 1 to Global.sharedBuffer[13]
+
+Thread 1 has written 1 to Global.sharedBuffer[14]
+
+Thread 1 has written 1 to Global.sharedBuffer[15]
+
+Thread 1 has written 1 to Global.sharedBuffer[16]
+
+Thread 1 has written 1 to Global.sharedBuffer[17]
+
+Thread 1 has written 1 to Global.sharedBuffer[18]
+
+Thread 1 has written 1 to Global.sharedBuffer[19]
+
+Thread 1 has written 1 to Global.sharedBuffer[20]
+
+Thread 1 has written 1 to Global.sharedBuffer[21]
+
+Thread 1 has written 1 to Global.sharedBuffer[22]
+
+Thread 1 has written 1 to Global.sharedBuffer[23]
+
+Thread 1 has written 1 to Global.sharedBuffer[24]
+
+Thread 1 has written 1 to Global.sharedBuffer[25]
+
+Thread 1 has written 1 to Global.sharedBuffer[26]
+
+Thread 1 has written 1 to Global.sharedBuffer[27]
+
+Thread 1 has written 1 to Global.sharedBuffer[28]
+
+Thread 1 has written 1 to Global.sharedBuffer[29]
+
+Thread 1 has written 1 to Global.sharedBuffer[30]
+
+Thread 1 has written 1 to Global.sharedBuffer[31]
+
+Thread 1 has written 1 to Global.sharedBuffer[32]
+
+Thread 1 has written 1 to Global.sharedBuffer[33]
+
+Thread 1 has written 1 to Global.sharedBuffer[34]
+
+Thread 1 has written 1 to Global.sharedBuffer[35]
+
+Thread 1 has written 1 to Global.sharedBuffer[36]
+
+Thread 1 has written 1 to Global.sharedBuffer[37]
+
+Thread 1 has written 1 to Global.sharedBuffer[38]
+
+Thread 1 has written 1 to Global.sharedBuffer[39]
+
+Thread 1 has written 1 to Global.sharedBuffer[40]
+
+Thread 1 has written 1 to Global.sharedBuffer[41]
+
+Thread 1 has written 1 to Global.sharedBuffer[42]
+
+Thread 1 has written 1 to Global.sharedBuffer[43]
+
+Thread 1 has written 1 to Global.sharedBuffer[44]
+
+Thread 1 has written 1 to Global.sharedBuffer[45]
+
+Thread 1 has written 1 to Global.sharedBuffer[46]
+
+Thread 1 has written 1 to Global.sharedBuffer[47]
+
+Thread 1 has written 1 to Global.sharedBuffer[48]
+
+Thread 1 has written 1 to Global.sharedBuffer[49]
+
+Thread 1 has written 1 to Global.sharedBuffer[50]
+
+Thread 2 has written 2 to Global.sharedBuffer[50]
+
+Thread 2 has written 2 to Global.sharedBuffer[52]
+
+Thread 1 has written 1 to Global.sharedBuffer[51]
+
+Thread 1 has written 1 to Global.sharedBuffer[54]
+
+Thread 1 has written 1 to Global.sharedBuffer[55]
+
+Thread 1 has written 1 to Global.sharedBuffer[56]
+
+Thread 2 has written 2 to Global.sharedBuffer[53]
+
+Thread 2 has written 2 to Global.sharedBuffer[58]
+
+Thread 2 has written 2 to Global.sharedBuffer[59]
+
+Thread 1 has written 1 to Global.sharedBuffer[57]
+
+Thread 2 has written 2 to Global.sharedBuffer[60]
+
+Thread 2 has written 2 to Global.sharedBuffer[62]
+
+Thread 2 has written 2 to Global.sharedBuffer[63]
+
+Thread 2 has written 2 to Global.sharedBuffer[64]
+
+Thread 2 has written 2 to Global.sharedBuffer[65]
+
+Thread 3 has written 3 to Global.sharedBuffer[58]
+
+Thread 2 has written 2 to Global.sharedBuffer[66]
+
+Thread 2 has written 2 to Global.sharedBuffer[68]
+
+Thread 2 has written 2 to Global.sharedBuffer[69]
+
+Thread 2 has written 2 to Global.sharedBuffer[70]
+
+Thread 2 has written 2 to Global.sharedBuffer[71]
+
+Thread 2 has written 2 to Global.sharedBuffer[72]
+
+Thread 2 has written 2 to Global.sharedBuffer[73]
+
+Thread 2 has written 2 to Global.sharedBuffer[74]
+
+Thread 2 has written 2 to Global.sharedBuffer[75]
+
+Thread 2 has written 2 to Global.sharedBuffer[76]
+
+Thread 2 has written 2 to Global.sharedBuffer[77]
+
+Thread 2 has written 2 to Global.sharedBuffer[78]
+
+Thread 2 has written 2 to Global.sharedBuffer[79]
+
+Thread 1 has written 1 to Global.sharedBuffer[61]
+
+Thread 2 has written 2 to Global.sharedBuffer[80]
+
+Thread 2 has written 2 to Global.sharedBuffer[82]
+
+Thread 2 has written 2 to Global.sharedBuffer[83]
+
+Thread 2 has written 2 to Global.sharedBuffer[84]
+
+Thread 2 has written 2 to Global.sharedBuffer[85]
+
+Thread 2 has written 2 to Global.sharedBuffer[86]
+
+Thread 2 has written 2 to Global.sharedBuffer[87]
+
+Thread 2 has written 2 to Global.sharedBuffer[88]
+
+Thread 2 has written 2 to Global.sharedBuffer[89]
+
+Thread 2 has written 2 to Global.sharedBuffer[90]
+
+Thread 2 has written 2 to Global.sharedBuffer[91]
+
+Thread 2 has written 2 to Global.sharedBuffer[92]
+
+Thread 2 has written 2 to Global.sharedBuffer[93]
+
+Thread 2 has written 2 to Global.sharedBuffer[94]
+
+Thread 2 has written 2 to Global.sharedBuffer[95]
+
+Thread 2 has written 2 to Global.sharedBuffer[96]
+
+Thread 2 has written 2 to Global.sharedBuffer[97]
+
+Thread 2 has written 2 to Global.sharedBuffer[98]
+
+Thread 2 has written 2 to Global.sharedBuffer[99]
+
+Thread 2 has written 2 to Global.sharedBuffer[100]
+
+Thread 2 has written 2 to Global.sharedBuffer[101]
+
+Thread 4 has written 4 to Global.sharedBuffer[73]
+
+Thread 4 has written 4 to Global.sharedBuffer[103]
+
+Thread 4 has written 4 to Global.sharedBuffer[104]
+
+Thread 4 has written 4 to Global.sharedBuffer[105]
+
+Thread 4 has written 4 to Global.sharedBuffer[106]
+
+Thread 3 has written 3 to Global.sharedBuffer[67]
+
+Thread 3 has written 3 to Global.sharedBuffer[108]
+
+Thread 3 has written 3 to Global.sharedBuffer[109]
+
+Thread 3 has written 3 to Global.sharedBuffer[110]
+
+Thread 3 has written 3 to Global.sharedBuffer[111]
+
+Thread 3 has written 3 to Global.sharedBuffer[112]
+
+Thread 3 has written 3 to Global.sharedBuffer[113]
+
+Thread 3 has written 3 to Global.sharedBuffer[114]
+
+Thread 3 has written 3 to Global.sharedBuffer[115]
+
+Thread 3 has written 3 to Global.sharedBuffer[116]
+
+Thread 3 has written 3 to Global.sharedBuffer[117]
+
+Thread 3 has written 3 to Global.sharedBuffer[118]
+
+Thread 3 has written 3 to Global.sharedBuffer[119]
+
+Thread 3 has written 3 to Global.sharedBuffer[120]
+
+Thread 3 has written 3 to Global.sharedBuffer[121]
+
+Thread 4 has written 4 to Global.sharedBuffer[107]
+
+Thread 4 has written 4 to Global.sharedBuffer[123]
+
+Thread 2 has written 2 to Global.sharedBuffer[102]
+
+Thread 2 has written 2 to Global.sharedBuffer[125]
+
+Thread 2 has written 2 to Global.sharedBuffer[126]
+
+Thread 2 has written 2 to Global.sharedBuffer[127]
+
+Thread 2 has written 2 to Global.sharedBuffer[128]
+
+Thread 2 has written 2 to Global.sharedBuffer[129]
+
+Thread 2 has written 2 to Global.sharedBuffer[130]
+
+Thread 2 has written 2 to Global.sharedBuffer[131]
+
+Thread 2 has written 2 to Global.sharedBuffer[132]
+
+Thread 2 has written 2 to Global.sharedBuffer[133]
+
+Thread 2 has written 2 to Global.sharedBuffer[134]
+
+Thread 1 has written 1 to Global.sharedBuffer[81]
+
+Thread 1 has written 1 to Global.sharedBuffer[136]
+
+Thread 1 has written 1 to Global.sharedBuffer[137]
+
+Thread 1 has written 1 to Global.sharedBuffer[138]
+
+Thread 1 has written 1 to Global.sharedBuffer[139]
+
+Thread 1 has written 1 to Global.sharedBuffer[140]
+
+Thread 1 has written 1 to Global.sharedBuffer[141]
+
+Thread 1 has written 1 to Global.sharedBuffer[142]
+
+Thread 2 has written 2 to Global.sharedBuffer[135]
+
+Thread 2 has written 2 to Global.sharedBuffer[144]
+
+Thread 2 has written 2 to Global.sharedBuffer[145]
+
+Thread 2 has written 2 to Global.sharedBuffer[146]
+
+Thread 2 has written 2 to Global.sharedBuffer[147]
+
+Thread 2 has written 2 to Global.sharedBuffer[148]
+
+Thread 2 has written 2 to Global.sharedBuffer[149]
+
+Thread 2 has written 2 to Global.sharedBuffer[150]
+
+Thread 2 has written 2 to Global.sharedBuffer[151]
+
+Thread 2 has written 2 to Global.sharedBuffer[152]
+
+Thread 2 has written 2 to Global.sharedBuffer[153]
+
+Thread 4 has written 4 to Global.sharedBuffer[124]
+
+Thread 4 has written 4 to Global.sharedBuffer[155]
+
+Thread 4 has written 4 to Global.sharedBuffer[156]
+
+Thread 4 has written 4 to Global.sharedBuffer[157]
+
+Thread 4 has written 4 to Global.sharedBuffer[158]
+
+Thread 3 has written 3 to Global.sharedBuffer[122]
+
+Thread 3 has written 3 to Global.sharedBuffer[160]
+
+Thread 3 has written 3 to Global.sharedBuffer[161]
+
+Thread 3 has written 3 to Global.sharedBuffer[162]
+
+Thread 3 has written 3 to Global.sharedBuffer[163]
+
+Thread 3 has written 3 to Global.sharedBuffer[164]
+
+Thread 3 has written 3 to Global.sharedBuffer[165]
+
+Thread 3 has written 3 to Global.sharedBuffer[166]
+
+Thread 3 has written 3 to Global.sharedBuffer[167]
+
+Thread 3 has written 3 to Global.sharedBuffer[168]
+
+Thread 3 has written 3 to Global.sharedBuffer[169]
+
+Thread 3 has written 3 to Global.sharedBuffer[170]
+
+Thread 3 has written 3 to Global.sharedBuffer[171]
+
+Thread 3 has written 3 to Global.sharedBuffer[172]
+
+Thread 3 has written 3 to Global.sharedBuffer[173]
+
+Thread 3 has written 3 to Global.sharedBuffer[174]
+
+Thread 3 has written 3 to Global.sharedBuffer[175]
+
+Thread 3 has written 3 to Global.sharedBuffer[176]
+
+Thread 3 has written 3 to Global.sharedBuffer[177]
+
+Thread 3 has written 3 to Global.sharedBuffer[178]
+
+Thread 3 has written 3 to Global.sharedBuffer[179]
+
+Thread 3 has written 3 to Global.sharedBuffer[180]
+
+Thread 3 has written 3 to Global.sharedBuffer[181]
+
+Thread 3 has written 3 to Global.sharedBuffer[182]
+
+Thread 3 has written 3 to Global.sharedBuffer[183]
+
+Thread 3 has written 3 to Global.sharedBuffer[184]
+
+Thread 3 has written 3 to Global.sharedBuffer[185]
+
+Thread 3 has written 3 to Global.sharedBuffer[186]
+
+Thread 3 has written 3 to Global.sharedBuffer[187]
+
+Thread 3 has written 3 to Global.sharedBuffer[188]
+
+Thread 3 has written 3 to Global.sharedBuffer[189]
+
+Thread 3 has written 3 to Global.sharedBuffer[190]
+
+Thread 3 has written 3 to Global.sharedBuffer[191]
+
+Thread 3 has written 3 to Global.sharedBuffer[192]
+
+Thread 3 has written 3 to Global.sharedBuffer[193]
+
+Thread 3 has written 3 to Global.sharedBuffer[194]
+
+Thread 3 has written 3 to Global.sharedBuffer[195]
+
+Thread 3 has written 3 to Global.sharedBuffer[196]
+
+Thread 3 has written 3 to Global.sharedBuffer[197]
+
+Thread 3 has written 3 to Global.sharedBuffer[198]
+
+Thread 3 has written 3 to Global.sharedBuffer[199]
+
+Thread 3 has written 3 to Global.sharedBuffer[200]
+
+Thread 3 has written 3 to Global.sharedBuffer[201]
+
+Thread 3 has written 3 to Global.sharedBuffer[202]
+
+Thread 3 has written 3 to Global.sharedBuffer[203]
+
+Thread 3 has written 3 to Global.sharedBuffer[204]
+
+Thread 3 has written 3 to Global.sharedBuffer[205]
+
+Thread 3 has written 3 to Global.sharedBuffer[206]
+
+Thread 3 has written 3 to Global.sharedBuffer[207]
+
+Thread 3 has written 3 to Global.sharedBuffer[208]
+
+Thread 3 has written 3 to Global.sharedBuffer[209]
+
+Thread 3 has written 3 to Global.sharedBuffer[210]
+
+Thread 3 has written 3 to Global.sharedBuffer[211]
+
+Thread 3 has written 3 to Global.sharedBuffer[212]
+
+Thread 3 has written 3 to Global.sharedBuffer[213]
+
+Thread 3 has written 3 to Global.sharedBuffer[214]
+
+Thread 3 has written 3 to Global.sharedBuffer[215]
+
+Thread 3 has written 3 to Global.sharedBuffer[216]
+
+Thread 3 has written 3 to Global.sharedBuffer[217]
+
+Thread 3 has written 3 to Global.sharedBuffer[218]
+
+Thread 3 has written 3 to Global.sharedBuffer[219]
+
+Thread 3 has written 3 to Global.sharedBuffer[220]
+
+Thread 3 has written 3 to Global.sharedBuffer[221]
+
+Thread 3 has written 3 to Global.sharedBuffer[222]
+
+Thread 3 has written 3 to Global.sharedBuffer[223]
+
+Thread 3 has written 3 to Global.sharedBuffer[224]
+
+Thread 3 has written 3 to Global.sharedBuffer[225]
+
+Thread 3 has written 3 to Global.sharedBuffer[226]
+
+Thread 3 has written 3 to Global.sharedBuffer[227]
+
+Thread 3 has written 3 to Global.sharedBuffer[228]
+
+Thread 3 has written 3 to Global.sharedBuffer[229]
+
+Thread 3 has written 3 to Global.sharedBuffer[230]
+
+Thread 3 has written 3 to Global.sharedBuffer[231]
+
+Thread 3 has written 3 to Global.sharedBuffer[232]
+
+Thread 3 has written 3 to Global.sharedBuffer[233]
+
+Thread 3 has written 3 to Global.sharedBuffer[234]
+
+Thread 3 has written 3 to Global.sharedBuffer[235]
+
+Thread 3 has written 3 to Global.sharedBuffer[236]
+
+Thread 3 has written 3 to Global.sharedBuffer[237]
+
+Thread 3 has written 3 to Global.sharedBuffer[238]
+
+Thread 3 has written 3 to Global.sharedBuffer[239]
+
+Thread 3 has written 3 to Global.sharedBuffer[240]
+
+Thread 3 has written 3 to Global.sharedBuffer[241]
+
+Thread 3 has written 3 to Global.sharedBuffer[242]
+
+Thread 4 has written 4 to Global.sharedBuffer[159]
+
+Thread 4 has written 4 to Global.sharedBuffer[244]
+
+Thread 4 has written 4 to Global.sharedBuffer[245]
+
+Thread 4 has written 4 to Global.sharedBuffer[246]
+
+Thread 4 has written 4 to Global.sharedBuffer[247]
+
+Thread 4 has written 4 to Global.sharedBuffer[248]
+
+Thread 4 has written 4 to Global.sharedBuffer[249]
+
+Thread 4 has written 4 to Global.sharedBuffer[250]
+
+Thread 4 has written 4 to Global.sharedBuffer[251]
+
+Thread 4 has written 4 to Global.sharedBuffer[252]
+
+Thread 2 has written 2 to Global.sharedBuffer[154]
+
+Thread 2 has written 2 to Global.sharedBuffer[254]
+
+Thread 2 has written 2 to Global.sharedBuffer[255]
+
+Thread 2 has written 2 to Global.sharedBuffer[256]
+
+Thread 1 has written 1 to Global.sharedBuffer[143]
+
+Thread 1 has written 1 to Global.sharedBuffer[258]
+
+Thread 2 has written 2 to Global.sharedBuffer[257]
+
+Thread 2 has written 2 to Global.sharedBuffer[260]
+
+Thread 2 has written 2 to Global.sharedBuffer[261]
+
+Thread 2 has written 2 to Global.sharedBuffer[262]
+
+Thread 2 has written 2 to Global.sharedBuffer[263]
+
+Thread 2 has written 2 to Global.sharedBuffer[264]
+
+Thread 2 has written 2 to Global.sharedBuffer[265]
+
+Thread 2 has written 2 to Global.sharedBuffer[266]
+
+Thread 2 has written 2 to Global.sharedBuffer[267]
+
+Thread 2 has written 2 to Global.sharedBuffer[268]
+
+Thread 2 has written 2 to Global.sharedBuffer[269]
+
+Thread 2 has written 2 to Global.sharedBuffer[270]
+
+Thread 2 has written 2 to Global.sharedBuffer[271]
+
+Thread 2 has written 2 to Global.sharedBuffer[272]
+
+Thread 2 has written 2 to Global.sharedBuffer[273]
+
+Thread 2 has written 2 to Global.sharedBuffer[274]
+
+Thread 2 has written 2 to Global.sharedBuffer[275]
+
+Thread 2 has written 2 to Global.sharedBuffer[276]
+
+Thread 2 has written 2 to Global.sharedBuffer[277]
+
+Thread 2 has written 2 to Global.sharedBuffer[278]
+
+Thread 2 has written 2 to Global.sharedBuffer[279]
+
+Thread 2 has written 2 to Global.sharedBuffer[280]
+
+Thread 2 has written 2 to Global.sharedBuffer[281]
+
+Thread 2 has written 2 to Global.sharedBuffer[282]
+
+Thread 2 has written 2 to Global.sharedBuffer[283]
+
+Thread 2 has written 2 to Global.sharedBuffer[284]
+
+Thread 2 has written 2 to Global.sharedBuffer[285]
+
+Thread 2 has written 2 to Global.sharedBuffer[286]
+
+Thread 2 has written 2 to Global.sharedBuffer[287]
+
+Thread 2 has written 2 to Global.sharedBuffer[288]
+
+Thread 4 has written 4 to Global.sharedBuffer[253]
+
+Thread 4 has written 4 to Global.sharedBuffer[290]
+
+Thread 4 has written 4 to Global.sharedBuffer[291]
+
+Thread 4 has written 4 to Global.sharedBuffer[292]
+
+Thread 4 has written 4 to Global.sharedBuffer[293]
+
+Thread 4 has written 4 to Global.sharedBuffer[294]
+
+Thread 4 has written 4 to Global.sharedBuffer[295]
+
+Thread 4 has written 4 to Global.sharedBuffer[296]
+
+Thread 4 has written 4 to Global.sharedBuffer[297]
+
+Thread 4 has written 4 to Global.sharedBuffer[298]
+
+Thread 4 has written 4 to Global.sharedBuffer[299]
+
+Thread 4 has written 4 to Global.sharedBuffer[300]
+
+Thread 4 has written 4 to Global.sharedBuffer[301]
+
+Thread 4 has written 4 to Global.sharedBuffer[302]
+
+Thread 4 has written 4 to Global.sharedBuffer[303]
+
+Thread 4 has written 4 to Global.sharedBuffer[304]
+
+Thread 4 has written 4 to Global.sharedBuffer[305]
+
+Thread 4 has written 4 to Global.sharedBuffer[306]
+
+Thread 4 has written 4 to Global.sharedBuffer[307]
+
+Thread 4 has written 4 to Global.sharedBuffer[308]
+
+Thread 4 has written 4 to Global.sharedBuffer[309]
+
+Thread 4 has written 4 to Global.sharedBuffer[310]
+
+Thread 4 has written 4 to Global.sharedBuffer[311]
+
+Thread 4 has written 4 to Global.sharedBuffer[312]
+
+Thread 4 has written 4 to Global.sharedBuffer[313]
+
+Thread 4 has written 4 to Global.sharedBuffer[314]
+
+Thread 4 has written 4 to Global.sharedBuffer[315]
+
+Thread 4 has written 4 to Global.sharedBuffer[316]
+
+Thread 4 has written 4 to Global.sharedBuffer[317]
+
+Thread 4 has written 4 to Global.sharedBuffer[318]
+
+Thread 4 has written 4 to Global.sharedBuffer[319]
+
+Thread 4 has written 4 to Global.sharedBuffer[320]
+
+Thread 4 has written 4 to Global.sharedBuffer[321]
+
+Thread 4 has written 4 to Global.sharedBuffer[322]
+
+Thread 4 has written 4 to Global.sharedBuffer[323]
+
+Thread 4 has written 4 to Global.sharedBuffer[324]
+
+Thread 4 has written 4 to Global.sharedBuffer[325]
+
+Thread 4 has written 4 to Global.sharedBuffer[326]
+
+Thread 4 has written 4 to Global.sharedBuffer[327]
+
+Thread 4 has written 4 to Global.sharedBuffer[328]
+
+Thread 4 has written 4 to Global.sharedBuffer[329]
+
+Thread 4 has written 4 to Global.sharedBuffer[330]
+
+Thread 4 has written 4 to Global.sharedBuffer[331]
+
+Thread 4 has written 4 to Global.sharedBuffer[332]
+
+Thread 4 has written 4 to Global.sharedBuffer[333]
+
+Thread 4 has written 4 to Global.sharedBuffer[334]
+
+Thread 4 has written 4 to Global.sharedBuffer[335]
+
+Thread 4 has written 4 to Global.sharedBuffer[336]
+
+Thread 4 has written 4 to Global.sharedBuffer[337]
+
+Thread 4 has written 4 to Global.sharedBuffer[338]
+
+Thread 4 has written 4 to Global.sharedBuffer[339]
+
+Thread 4 has written 4 to Global.sharedBuffer[340]
+
+Thread 4 has written 4 to Global.sharedBuffer[341]
+
+Thread 4 has written 4 to Global.sharedBuffer[342]
+
+Thread 4 has written 4 to Global.sharedBuffer[343]
+
+Thread 4 has written 4 to Global.sharedBuffer[344]
+
+Thread 4 has written 4 to Global.sharedBuffer[345]
+
+Thread 4 has written 4 to Global.sharedBuffer[346]
+
+Thread 4 has written 4 to Global.sharedBuffer[347]
+
+Thread 4 has written 4 to Global.sharedBuffer[348]
+
+Thread 4 has written 4 to Global.sharedBuffer[349]
+
+Thread 4 has written 4 to Global.sharedBuffer[350]
+
+Thread 4 has written 4 to Global.sharedBuffer[351]
+
+Thread 4 has written 4 to Global.sharedBuffer[352]
+
+Thread 4 has written 4 to Global.sharedBuffer[353]
+
+Thread 4 has written 4 to Global.sharedBuffer[354]
+
+Thread 4 has written 4 to Global.sharedBuffer[355]
+
+Thread 4 has written 4 to Global.sharedBuffer[356]
+
+Thread 4 has written 4 to Global.sharedBuffer[357]
+
+Thread 4 has written 4 to Global.sharedBuffer[358]
+
+Thread 4 has written 4 to Global.sharedBuffer[359]
+
+Thread 4 has written 4 to Global.sharedBuffer[360]
+
+Thread 4 has written 4 to Global.sharedBuffer[361]
+
+Thread 4 has written 4 to Global.sharedBuffer[362]
+
+Thread 4 has written 4 to Global.sharedBuffer[363]
+
+Thread 4 has written 4 to Global.sharedBuffer[364]
+
+Thread 4 has written 4 to Global.sharedBuffer[365]
+
+Thread 4 has written 4 to Global.sharedBuffer[366]
+
+Thread 1 has written 1 to Global.sharedBuffer[259]
+
+Thread 1 has written 1 to Global.sharedBuffer[368]
+
+Thread 1 has written 1 to Global.sharedBuffer[369]
+
+Thread 1 has written 1 to Global.sharedBuffer[370]
+
+Thread 1 has written 1 to Global.sharedBuffer[371]
+
+Thread 1 has written 1 to Global.sharedBuffer[372]
+
+Thread 1 has written 1 to Global.sharedBuffer[373]
+
+Thread 1 has written 1 to Global.sharedBuffer[374]
+
+Thread 1 has written 1 to Global.sharedBuffer[375]
+
+Thread 1 has written 1 to Global.sharedBuffer[376]
+
+Thread 1 has written 1 to Global.sharedBuffer[377]
+
+Thread 1 has written 1 to Global.sharedBuffer[378]
+
+Thread 1 has written 1 to Global.sharedBuffer[379]
+
+Thread 1 has written 1 to Global.sharedBuffer[380]
+
+Thread 1 has written 1 to Global.sharedBuffer[381]
+
+Thread 1 has written 1 to Global.sharedBuffer[382]
+
+Thread 1 has written 1 to Global.sharedBuffer[383]
+
+Thread 1 has written 1 to Global.sharedBuffer[384]
+
+Thread 1 has written 1 to Global.sharedBuffer[385]
+
+Thread 1 has written 1 to Global.sharedBuffer[386]
+
+Thread 1 has written 1 to Global.sharedBuffer[387]
+
+Thread 1 has written 1 to Global.sharedBuffer[388]
+
+Thread 1 has written 1 to Global.sharedBuffer[389]
+
+Thread 1 has written 1 to Global.sharedBuffer[390]
+
+Thread 1 has written 1 to Global.sharedBuffer[391]
+
+Thread 1 has written 1 to Global.sharedBuffer[392]
+
+Thread 1 has written 1 to Global.sharedBuffer[393]
+
+Thread 1 has written 1 to Global.sharedBuffer[394]
+
+Thread 1 has written 1 to Global.sharedBuffer[395]
+
+Thread 1 has written 1 to Global.sharedBuffer[396]
+
+Thread 1 has written 1 to Global.sharedBuffer[397]
+
+Thread 1 has written 1 to Global.sharedBuffer[398]
+
+Thread 1 has written 1 to Global.sharedBuffer[399]
+
+The final buffer is **************
+
+Global.sharedBuffer[0] = 1
+Global.sharedBuffer[1] = 1
+Global.sharedBuffer[2] = 1
+Global.sharedBuffer[3] = 1
+Global.sharedBuffer[4] = 1
+Global.sharedBuffer[5] = 1
+Global.sharedBuffer[6] = 1
+Global.sharedBuffer[7] = 1
+Global.sharedBuffer[8] = 1
+Global.sharedBuffer[9] = 1
+Global.sharedBuffer[10] = 1
+Global.sharedBuffer[11] = 1
+Global.sharedBuffer[12] = 1
+Global.sharedBuffer[13] = 1
+Global.sharedBuffer[14] = 1
+Global.sharedBuffer[15] = 1
+Global.sharedBuffer[16] = 1
+Global.sharedBuffer[17] = 1
+Global.sharedBuffer[18] = 1
+Global.sharedBuffer[19] = 1
+Global.sharedBuffer[20] = 1
+Global.sharedBuffer[21] = 1
+Global.sharedBuffer[22] = 1
+Global.sharedBuffer[23] = 1
+Global.sharedBuffer[24] = 1
+Global.sharedBuffer[25] = 1
+Global.sharedBuffer[26] = 1
+Global.sharedBuffer[27] = 1
+Global.sharedBuffer[28] = 1
+Global.sharedBuffer[29] = 1
+Global.sharedBuffer[30] = 1
+Global.sharedBuffer[31] = 1
+Global.sharedBuffer[32] = 1
+Global.sharedBuffer[33] = 1
+Global.sharedBuffer[34] = 1
+Global.sharedBuffer[35] = 1
+Global.sharedBuffer[36] = 1
+Global.sharedBuffer[37] = 1
+Global.sharedBuffer[38] = 1
+Global.sharedBuffer[39] = 1
+Global.sharedBuffer[40] = 1
+Global.sharedBuffer[41] = 2
+Global.sharedBuffer[42] = 1
+Global.sharedBuffer[43] = 1
+Global.sharedBuffer[44] = 1
+Global.sharedBuffer[45] = 1
+Global.sharedBuffer[46] = 1
+Global.sharedBuffer[47] = 1
+Global.sharedBuffer[48] = 1
+Global.sharedBuffer[49] = 1
+Global.sharedBuffer[50] = 1
+Global.sharedBuffer[51] = 1
+Global.sharedBuffer[52] = 2
+Global.sharedBuffer[53] = 3
+Global.sharedBuffer[54] = 1
+Global.sharedBuffer[55] = 1
+Global.sharedBuffer[56] = 1
+Global.sharedBuffer[57] = 1
+Global.sharedBuffer[58] = 2
+Global.sharedBuffer[59] = 2
+Global.sharedBuffer[60] = 4
+Global.sharedBuffer[61] = 1
+Global.sharedBuffer[62] = 2
+Global.sharedBuffer[63] = 2
+Global.sharedBuffer[64] = 2
+Global.sharedBuffer[65] = 2
+Global.sharedBuffer[66] = 2
+Global.sharedBuffer[67] = 3
+Global.sharedBuffer[68] = 2
+Global.sharedBuffer[69] = 2
+Global.sharedBuffer[70] = 2
+Global.sharedBuffer[71] = 2
+Global.sharedBuffer[72] = 2
+Global.sharedBuffer[73] = 2
+Global.sharedBuffer[74] = 2
+Global.sharedBuffer[75] = 2
+Global.sharedBuffer[76] = 2
+Global.sharedBuffer[77] = 2
+Global.sharedBuffer[78] = 2
+Global.sharedBuffer[79] = 2
+Global.sharedBuffer[80] = 2
+Global.sharedBuffer[81] = 1
+Global.sharedBuffer[82] = 2
+Global.sharedBuffer[83] = 2
+Global.sharedBuffer[84] = 2
+Global.sharedBuffer[85] = 2
+Global.sharedBuffer[86] = 2
+Global.sharedBuffer[87] = 2
+Global.sharedBuffer[88] = 2
+Global.sharedBuffer[89] = 2
+Global.sharedBuffer[90] = 2
+Global.sharedBuffer[91] = 2
+Global.sharedBuffer[92] = 2
+Global.sharedBuffer[93] = 2
+Global.sharedBuffer[94] = 2
+Global.sharedBuffer[95] = 2
+Global.sharedBuffer[96] = 2
+Global.sharedBuffer[97] = 2
+Global.sharedBuffer[98] = 2
+Global.sharedBuffer[99] = 2
+Global.sharedBuffer[100] = 2
+Global.sharedBuffer[101] = 2
+Global.sharedBuffer[102] = 2
+Global.sharedBuffer[103] = 4
+Global.sharedBuffer[104] = 4
+Global.sharedBuffer[105] = 4
+Global.sharedBuffer[106] = 4
+Global.sharedBuffer[107] = 4
+Global.sharedBuffer[108] = 3
+Global.sharedBuffer[109] = 3
+Global.sharedBuffer[110] = 3
+Global.sharedBuffer[111] = 3
+Global.sharedBuffer[112] = 3
+Global.sharedBuffer[113] = 3
+Global.sharedBuffer[114] = 3
+Global.sharedBuffer[115] = 3
+Global.sharedBuffer[116] = 3
+Global.sharedBuffer[117] = 3
+Global.sharedBuffer[118] = 3
+Global.sharedBuffer[119] = 3
+Global.sharedBuffer[120] = 3
+Global.sharedBuffer[121] = 3
+Global.sharedBuffer[122] = 3
+Global.sharedBuffer[123] = 4
+Global.sharedBuffer[124] = 4
+Global.sharedBuffer[125] = 2
+Global.sharedBuffer[126] = 2
+Global.sharedBuffer[127] = 2
+Global.sharedBuffer[128] = 2
+Global.sharedBuffer[129] = 2
+Global.sharedBuffer[130] = 2
+Global.sharedBuffer[131] = 2
+Global.sharedBuffer[132] = 2
+Global.sharedBuffer[133] = 2
+Global.sharedBuffer[134] = 2
+Global.sharedBuffer[135] = 2
+Global.sharedBuffer[136] = 1
+Global.sharedBuffer[137] = 1
+Global.sharedBuffer[138] = 1
+Global.sharedBuffer[139] = 1
+Global.sharedBuffer[140] = 1
+Global.sharedBuffer[141] = 1
+Global.sharedBuffer[142] = 1
+Global.sharedBuffer[143] = 1
+Global.sharedBuffer[144] = 2
+Global.sharedBuffer[145] = 2
+Global.sharedBuffer[146] = 2
+Global.sharedBuffer[147] = 2
+Global.sharedBuffer[148] = 2
+Global.sharedBuffer[149] = 2
+Global.sharedBuffer[150] = 2
+Global.sharedBuffer[151] = 2
+Global.sharedBuffer[152] = 2
+Global.sharedBuffer[153] = 2
+Global.sharedBuffer[154] = 2
+Global.sharedBuffer[155] = 4
+Global.sharedBuffer[156] = 4
+Global.sharedBuffer[157] = 4
+Global.sharedBuffer[158] = 4
+Global.sharedBuffer[159] = 4
+Global.sharedBuffer[160] = 3
+Global.sharedBuffer[161] = 3
+Global.sharedBuffer[162] = 3
+Global.sharedBuffer[163] = 3
+Global.sharedBuffer[164] = 3
+Global.sharedBuffer[165] = 3
+Global.sharedBuffer[166] = 3
+Global.sharedBuffer[167] = 3
+Global.sharedBuffer[168] = 3
+Global.sharedBuffer[169] = 3
+Global.sharedBuffer[170] = 3
+Global.sharedBuffer[171] = 3
+Global.sharedBuffer[172] = 3
+Global.sharedBuffer[173] = 3
+Global.sharedBuffer[174] = 3
+Global.sharedBuffer[175] = 3
+Global.sharedBuffer[176] = 3
+Global.sharedBuffer[177] = 3
+Global.sharedBuffer[178] = 3
+Global.sharedBuffer[179] = 3
+Global.sharedBuffer[180] = 3
+Global.sharedBuffer[181] = 3
+Global.sharedBuffer[182] = 3
+Global.sharedBuffer[183] = 3
+Global.sharedBuffer[184] = 3
+Global.sharedBuffer[185] = 3
+Global.sharedBuffer[186] = 3
+Global.sharedBuffer[187] = 3
+Global.sharedBuffer[188] = 3
+Global.sharedBuffer[189] = 3
+Global.sharedBuffer[190] = 3
+Global.sharedBuffer[191] = 3
+Global.sharedBuffer[192] = 3
+Global.sharedBuffer[193] = 3
+Global.sharedBuffer[194] = 3
+Global.sharedBuffer[195] = 3
+Global.sharedBuffer[196] = 3
+Global.sharedBuffer[197] = 3
+Global.sharedBuffer[198] = 3
+Global.sharedBuffer[199] = 3
+Global.sharedBuffer[200] = 3
+Global.sharedBuffer[201] = 3
+Global.sharedBuffer[202] = 3
+Global.sharedBuffer[203] = 3
+Global.sharedBuffer[204] = 3
+Global.sharedBuffer[205] = 3
+Global.sharedBuffer[206] = 3
+Global.sharedBuffer[207] = 3
+Global.sharedBuffer[208] = 3
+Global.sharedBuffer[209] = 3
+Global.sharedBuffer[210] = 3
+Global.sharedBuffer[211] = 3
+Global.sharedBuffer[212] = 3
+Global.sharedBuffer[213] = 3
+Global.sharedBuffer[214] = 3
+Global.sharedBuffer[215] = 3
+Global.sharedBuffer[216] = 3
+Global.sharedBuffer[217] = 3
+Global.sharedBuffer[218] = 3
+Global.sharedBuffer[219] = 3
+Global.sharedBuffer[220] = 3
+Global.sharedBuffer[221] = 3
+Global.sharedBuffer[222] = 3
+Global.sharedBuffer[223] = 3
+Global.sharedBuffer[224] = 3
+Global.sharedBuffer[225] = 3
+Global.sharedBuffer[226] = 3
+Global.sharedBuffer[227] = 3
+Global.sharedBuffer[228] = 3
+Global.sharedBuffer[229] = 3
+Global.sharedBuffer[230] = 3
+Global.sharedBuffer[231] = 3
+Global.sharedBuffer[232] = 3
+Global.sharedBuffer[233] = 3
+Global.sharedBuffer[234] = 3
+Global.sharedBuffer[235] = 3
+Global.sharedBuffer[236] = 3
+Global.sharedBuffer[237] = 3
+Global.sharedBuffer[238] = 3
+Global.sharedBuffer[239] = 3
+Global.sharedBuffer[240] = 3
+Global.sharedBuffer[241] = 3
+Global.sharedBuffer[242] = 3
+Global.sharedBuffer[243] = 0
+Global.sharedBuffer[244] = 4
+Global.sharedBuffer[245] = 4
+Global.sharedBuffer[246] = 4
+Global.sharedBuffer[247] = 4
+Global.sharedBuffer[248] = 4
+Global.sharedBuffer[249] = 4
+Global.sharedBuffer[250] = 4
+Global.sharedBuffer[251] = 4
+Global.sharedBuffer[252] = 4
+Global.sharedBuffer[253] = 4
+Global.sharedBuffer[254] = 2
+Global.sharedBuffer[255] = 2
+Global.sharedBuffer[256] = 2
+Global.sharedBuffer[257] = 2
+Global.sharedBuffer[258] = 1
+Global.sharedBuffer[259] = 1
+Global.sharedBuffer[260] = 2
+Global.sharedBuffer[261] = 2
+Global.sharedBuffer[262] = 2
+Global.sharedBuffer[263] = 2
+Global.sharedBuffer[264] = 2
+Global.sharedBuffer[265] = 2
+Global.sharedBuffer[266] = 2
+Global.sharedBuffer[267] = 2
+Global.sharedBuffer[268] = 2
+Global.sharedBuffer[269] = 2
+Global.sharedBuffer[270] = 2
+Global.sharedBuffer[271] = 2
+Global.sharedBuffer[272] = 2
+Global.sharedBuffer[273] = 2
+Global.sharedBuffer[274] = 2
+Global.sharedBuffer[275] = 2
+Global.sharedBuffer[276] = 2
+Global.sharedBuffer[277] = 2
+Global.sharedBuffer[278] = 2
+Global.sharedBuffer[279] = 2
+Global.sharedBuffer[280] = 2
+Global.sharedBuffer[281] = 2
+Global.sharedBuffer[282] = 2
+Global.sharedBuffer[283] = 2
+Global.sharedBuffer[284] = 2
+Global.sharedBuffer[285] = 2
+Global.sharedBuffer[286] = 2
+Global.sharedBuffer[287] = 2
+Global.sharedBuffer[288] = 2
+Global.sharedBuffer[289] = 0
+Global.sharedBuffer[290] = 4
+Global.sharedBuffer[291] = 4
+Global.sharedBuffer[292] = 4
+Global.sharedBuffer[293] = 4
+Global.sharedBuffer[294] = 4
+Global.sharedBuffer[295] = 4
+Global.sharedBuffer[296] = 4
+Global.sharedBuffer[297] = 4
+Global.sharedBuffer[298] = 4
+Global.sharedBuffer[299] = 4
