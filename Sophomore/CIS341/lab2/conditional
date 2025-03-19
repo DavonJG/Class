@@ -1,0 +1,15 @@
+C Code:
+
+A[i] = A[i/2] + 1
+
+C Code:
+
+If(i<N)
+	{
+		A[i]=0;
+	}
+
+MIPS:
+
+lw		$t0, 0($gp)		#Fetch i
+lw		$t1, 4($gp)
