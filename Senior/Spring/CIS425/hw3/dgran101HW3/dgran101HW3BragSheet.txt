@@ -1,0 +1,24 @@
+Davon Grant
+CIS425 HW#3 Brag Sheet
+
+Interactions:
+	Press 'esc' to quit
+	Press 'r' to reset the scene
+	Press 's' to send the bird on it's flight path
+	Press 'f' to toggle the wing flapping
+	Press '0' to view from overhead
+	Press '1' to view from north
+	Press '2' to view from east
+	Press '3' to view from south
+	Press '4' to view from west
+	Press 'up' to increase flight speed along the path
+	Press 'down' to decrease flight speed along the path
+
+This project was interesting because it forced me to use 3D, something that I am still not too comfortable with. However, I am much more confident with it than I was before, and some features that I was able to successfully get were:
+-Effectively place 3D objects
+-Create views that actually didn't look terrible
+-Creating a working flight path
+-Forcing myself to only use 3D objects
+-Used a variety of glut objects: wirespheres for trees, cubes for tree trunks and grass, cone for bird beak, spheres for bird and nest
+
+Some issues that I had were using depth buffer to its full potential (I couldn't get the nest to appear under the bird) and picking with the mouse. I did not end up implementing apples in the trees, or dragging them in overview mode. 

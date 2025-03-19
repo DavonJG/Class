@@ -1,0 +1,29 @@
+Davon Grant
+CIS425 HW#1 Brag Sheet
+
+Interactions:
+Pres escape key to close window.
+Press O to see glOrtho view.
+Press F to see glFrustum view.
+
+This project is called "Coleman and the Tortoise." It is based on a friend of mine who is a student here (Coleman Casey) who is from South Dakota, and has extensive experience working with animals in the zoo. We are in several group chats together, and one of the group chats contains a picture of him and a tortoise, which he claimed was one of his favorite animals to work with. This tortoise passed away recently, so I decided to create a 2D depiction of Coleman at the zoo with his tortoise since it is still in recent memory.
+
+As someone who has never worked with graphics before, there were several challenges I had to overcome for this project, but I took it piece by piece. First, I started with animal.cpp from the textbook as my starter file. I debated whether I wanted to use it to create Coleman or the tortoise, but eventually decided that the base was more adaptable to use for Coleman. Despite the order of the code in the source file, Coleman was one of the first thing I created. I got rid of drawHead and drawTail, but decided to use drawStickLegs() and drawRectBody(), which are from the original animal.cpp file. Another thing that was also helpful was drawing the sun first, as I was able to use the same concept to draw Coleman's head.
+
+I was also pretty proud of my tortoise, even though it was a bit basic. I used part of drawHead() from the textbook to understand how to draw half of a circle, and proceeded to go over it in outline mode to make it look more like a shell. This is also where I implemented a color array, and I was happy that I eventually figured this out as I would not have thought of another place to put it (if it wasn't obvious, I am not a very creative/artsy type.)
+
+However, while there were things that I was glad I was able to accomplish, there were also frustrations. For starters, I tried to draw the sign of Coleman's Zoo in stroke rather than bitmap, as it looks cleaner in my opinion. However, for some reason I was unable to get this working, and eventually settled with bitmap, which I learned how to do using the textbook. Another frustration was the amount of vertex3f's I used to create objects. While I was happy with the end result of these vertexes, it did not seem efficient and if I started over, I would've pursued more efficient ways of creating objects (such as more for loops or vertex arrays.) Finally, I was not able to create an actually viable view using glFrustum, which is something I still struggle to understand.
+
+After creating the background, sign, Coleman, and the Tortoise, I decided to draw the caged pig to attack some of the bonus objectives. I used my typical vertexes method to create the bounds of the cage, but forced myself to use a vertex array and a triangle fan for the cage boundaries. I also tried to use triangle strip to draw a rectangular body for the pig, but this did not work out. No matter how much I tried, I could not get it to display correctly.
+
+Features:
+-Various colors. Blue for the sky, green for the grass, black + blue + cream + white for coleman, silver for the cage, pink for the pig, yellow for the sun
+-TriangleStrip was used for Coleman's head and the tortoise's shell
+-LineStrip was also used in drawing Coleman's mouth
+-Both filled and outline mode were used
+-Text was included (bitmap)
+-Several objects were built with glVertex3f, and there was also an object built with vertex array and color array (the cage and the shell respectively)
+-There are multiple animals on different z-planes
+-Besides animals, there's a sign that displays text
+-Pressing O and F successfuly switches between glOrtho and glFrustum
+-A gradient was used in making the tortoise's shell

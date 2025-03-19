@@ -1,0 +1,31 @@
+Davon Grant
+CIS425 HW#4 Brag Sheet
+
+Interactions:
+Press the escape key to quit.
+up arrow - step forward
+down arrow - step backward
+right arrow - turn to the right
+left arrow - turn to the left
+shift+up arrow - look up
+shift+down arrow - look down
+d - opens the doors. can only be used when next to the door.
+l - flick the light switch. can only be used when next to the light switch
+p - light up the pumpkin. can only be used when next to the pumpkin (INCOMPLETE)
+b - have the ball move to the hat and start the game
+h - choose a house. can only be used when the game is in effect.
+
+
+
+
+
+
+This project was much more difficult than the first project for me. Some features that I was able to successfully get were:
+-Various colors spread throughout the food
+-Different 2D and 3D primitives
+-Creating a working submenu
+-Creating a working display panel
+-Creating working radio buttons
+-Creating working checkboxes
+
+However, some issues that I have are understanding OpenGL in 3D. This led to a rotation issue with my submenu option. In addition, I did not give myself enough time to do this project. I started way too late, and as a result did not have time to complete crucial features such as translation with mouseMotion. 

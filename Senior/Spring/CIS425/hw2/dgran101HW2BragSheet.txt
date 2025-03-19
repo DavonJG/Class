@@ -1,0 +1,41 @@
+Davon Grant
+CIS425 HW#2 Brag Sheet
+
+Interactions:
+Press the escape key to quit.
+Click the Pasta radio button to see it filled and see it displayed.
+Press a to fill the Pasta radio button and see it displayed.
+Click the Burger radio button to see it filled and see it displayed.
+Press s to fill the Burger radio button and see it displayed.
+Click the Pizza radio button to see it filled and see it displayed.
+Press d to fill the Pizza radio button and see it displayed.
+Click the Sushi radio button to see it filled and see it displayed.
+Press f to fill the Sushi radio button and see it displayed.
+Click the Apple checkbox to see it filled and see it displayed.
+Press z to fill the Apple checkbox and see it displayed.
+Click the Carrot checkbox to see it filled and see it displayed.
+Press x to fill the Carrot checkbox and see it displayed.
+Click the Wasabi checkbox to see it filled and see it displayed.
+Press c to fill the Wasabi checkbox and see it displayed.
+Click the Fries checkbox to see it filled and see it displayed.
+Press v to fill the Fries checkbox and see it displayed.
+Click the Brocolli checkbox to see it filled and see it displayed.
+Press b to fill the Brocolli checkbox and see it displayed.
+Right click the Display Panel to display submenu's
+Left click Change Plate Color > Silver to make the plate silver
+Left click Change Plate Color > Purple to make the plate purple
+Left click Change Plate Color > Silver to make the plate blue
+Left click Rotate Plate > 90 to rotate the plate 90 degrees.
+Left click Entree Portion > Double to make the portion size bigger
+Left click Entree Portion > Half to make the portion size smaller
+Left click Quit to exit the program.
+
+This project was much more difficult than the first project for me. Some features that I was able to successfully get were:
+-Various colors spread throughout the food
+-Different 2D and 3D primitives
+-Creating a working submenu
+-Creating a working display panel
+-Creating working radio buttons
+-Creating working checkboxes
+
+However, some issues that I have are understanding OpenGL in 3D. This led to a rotation issue with my submenu option. In addition, I did not give myself enough time to do this project. I started way too late, and as a result did not have time to complete crucial features such as translation with mouseMotion. 
