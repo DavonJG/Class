@@ -1,0 +1,157 @@
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw6
+Prelude> :load "LCss.hs"
+[1 of 5] Compiling State            ( State.hs, interpreted )
+[2 of 5] Compiling LC               ( LC.hs, interpreted )
+[3 of 5] Compiling LCParser         ( LCParser.hs, interpreted )
+[4 of 5] Compiling LCCEK            ( LCCEK.hs, interpreted )
+[5 of 5] Compiling Main             ( LCss.hs, interpreted )
+Ok, modules loaded: State, LC, LCParser, LCCEK, Main.
+*Main> stepRunC' fact state4
+Step: 0
+ C { x0 := 4; x1 := 1; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0
+ s[0]=4   s[1]=0   s[2]=0   s[3]=0   s[4]=0     <tap return>
+Step: 1
+ C { skip; x1 := 1; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 :=
+ s[0]=4   s[1]=0   s[2]=0   s[3]=0   s[4]=0     <tap return>
+Step: 2
+ C { x1 := 1; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(
+ s[0]=4   s[1]=0   s[2]=0   s[3]=0   s[4]=0     <tap return>
+Step: 3
+ C { skip; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>
+Step: 4
+ C while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Interrupted.
+*Main> quickCheck ss_prop
+St*Meaipn:> 
+ C if (val(x0)>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; 
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 6
+ C if (4>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while 
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 7
+ C if tt then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (va
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 8
+ C { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 9
+ C { { x1 := (4*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 10
+ C { { x1 := (4*1); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (va
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 11
+ C { { x1 := 4; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x0
+ s[0]=4   s[1]=1   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 12
+ C { { skip; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x0)*v
+ s[0]=4   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 13
+ C { x0 := (val(x0)-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x
+ s[0]=4   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 14
+ C { x0 := (4-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (
+ s[0]=4   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 15
+ C { x0 := 3; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(
+ s[0]=4   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 16
+ C { skip; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 17
+ C while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 18
+ C if (val(x0)>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; 
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 19
+ C if (3>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while 
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 20
+ C if tt then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (va
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 21
+ C { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 22
+ C { { x1 := (3*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>
+*Main> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw6
+5St*eMpa:i n2>
+ C { { x1 := (3*4); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (va
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 24
+ C { { x1 := 12; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x
+ s[0]=3   s[1]=4   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 25
+ C { { skip; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x0)*v
+ s[0]=3   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 26
+ C { x0 := (val(x0)-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x
+ s[0]=3   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 27
+ C { x0 := (3-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (
+ s[0]=3   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 28
+ C { x0 := 2; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(
+ s[0]=3   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 29
+ C { skip; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 30
+ C while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 31
+ C if (val(x0)>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; 
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 32
+ C if (2>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while 
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 33
+ C if tt then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (va
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 34
+ C { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 35
+ C { { x1 := (2*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 36
+ C { { x1 := (2*12); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (v
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 37
+ C { { x1 := 24; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x
+ s[0]=2   s[1]=12   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 38
+ C { { skip; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x0)*v
+ s[0]=2   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 39
+ C { x0 := (val(x0)-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x
+ s[0]=2   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 40
+ C { x0 := (2-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (
+ s[0]=2   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 41
+ C { x0 := 1; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(
+ s[0]=2   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 42
+ C { skip; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 43
+ C while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 44
+ C if (val(x0)>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; 
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 45
+ C if (1>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while 
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 46
+ C if tt then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (va
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 47
+ C { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 48
+ C { { x1 := (1*val(x1)); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 49
+ C { { x1 := (1*24); x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (v
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 50
+ C { { x1 := 24; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 51
+ C { { skip; x0 := (val(x0)-1) }; while (val(x0)>0) do { x1 := (val(x0)*v
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 52
+ C { x0 := (val(x0)-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 53
+ C { x0 := (1-1); while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 54
+ C { x0 := 0; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(
+ s[0]=1   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 55
+ C { skip; while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)
+ s[0]=0   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 56
+ C while (val(x0)>0) do { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }
+ s[0]=0   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 57
+ C if (val(x0)>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; 
+ s[0]=0   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 58
+ C if (0>0) then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while 
+ s[0]=0   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 59
+ C if ff then { { x1 := (val(x0)*val(x1)); x0 := (val(x0)-1) }; while (va
+ s[0]=0   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>Step: 60
+ C skip
+ s[0]=0   s[1]=24   s[2]=0   s[3]=0   s[4]=0     <tap return>
+*Main> :load "LCbs.hs"
+[1 of 5] Compiling State            ( State.hs, interpreted )
+[2 of 5] Compiling LC               ( LC.hs, interpreted )
+[3 of 5] Compiling LCParser         ( LCParser.hs, interpreted )
+[4 of 5] Compiling LCCEK            ( LCCEK.hs, interpreted )
+[5 of 5] Compiling Main             ( LCbs.hs, interpreted )
+Ok, modules loaded: State, LC, LCParser, LCCEK, Main.
+*Main> evalA (exA,state4)
+(19,fromList [(0,4),(1,0),(2,0),(3,0),(4,0)])
+*Main> evalB (exB,state4) 
+(tt,fromList [(0,4),(1,0),(2,0),(3,0),(4,0)])
+*Main> evalC (exC,state4) 
+(skip,fromList [(0,4),(1,24),(2,0),(3,0),(4,0)])
+*Main> quickCheck bs_prop
++++ OK, passed 100 tests.
+*Main> 

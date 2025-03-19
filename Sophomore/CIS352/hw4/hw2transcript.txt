@@ -1,0 +1,34 @@
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw4
+Prelude> :load "BuildNfa2.hs"
+[1 of 8] Compiling RegExp2          ( RegExp2.hs, interpreted )
+[2 of 8] Compiling Matches2         ( Matches2.hs, interpreted )
+[3 of 8] Compiling NfaTypes         ( NfaTypes.hs, interpreted )
+[4 of 8] Compiling NfaMisc          ( NfaMisc.hs, interpreted )
+[5 of 8] Compiling DrawNfa          ( DrawNfa.hs, interpreted )
+[6 of 8] Compiling NfaLib           ( NfaLib.hs, interpreted )
+[7 of 8] Compiling ImplementNfa     ( ImplementNfa.hs, interpreted )
+[8 of 8] Compiling BuildNfa2        ( BuildNfa2.hs, interpreted )
+Ok, modules loaded: BuildNfa2, NfaTypes, RegExp2, Matches2, ImplementNfa, DrawNfa, NfaMisc, NfaLib.
+*BuildNfa2> quickCheck prop_equivB
++++ OK, passed 100 tests.
+*BuildNfa2> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw4
+Warning: changing directory causes all loaded modules to be unloaded,
+because the search path has changed.
+Prelude> :load "Top2.hs"
+[ 1 of 10] Compiling RegExp2          ( RegExp2.hs, interpreted )
+[ 2 of 10] Compiling Matches2         ( Matches2.hs, interpreted )
+[ 3 of 10] Compiling NfaTypes         ( NfaTypes.hs, interpreted )
+[ 4 of 10] Compiling NfaMisc          ( NfaMisc.hs, interpreted )
+[ 5 of 10] Compiling DrawNfa          ( DrawNfa.hs, interpreted )
+[ 6 of 10] Compiling NfaLib           ( NfaLib.hs, interpreted )
+[ 7 of 10] Compiling ImplementNfa     ( ImplementNfa.hs, interpreted )
+[ 8 of 10] Compiling NfaToDfa         ( NfaToDfa.hs, interpreted )
+[ 9 of 10] Compiling BuildNfa2        ( BuildNfa2.hs, interpreted )
+[10 of 10] Compiling Top2             ( Top2.hs, interpreted )
+Ok, modules loaded: BuildNfa2, NfaTypes, RegExp2, Matches2, ImplementNfa, DrawNfa, NfaMisc, NfaLib, Top2, NfaToDfa.
+*Top2> tstPos
+True
+*Top2> tstNeg
+False
+*Top2> 

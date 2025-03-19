@@ -1,0 +1,84 @@
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw9
+Prelude> :load "hw09.hs"
+[1 of 1] Compiling Main             ( hw09.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> showHisto
+10
+3
+-5
+**********
+***
+*Main> -5
+-5
+*Main> showHisto
+1
+8
+-88
+*
+********
+*Main> showHisto
+-99999
+*Main> showHisto
+91
+7
+2
+8
+-1
+*******************************************************************************************
+*******
+**
+********
+*Main> ask "Do you like rhubarb?"
+Do you like rhubarb?	no!!!
+'n'
+*Main> ask "Do you like CS?"
+Do you like CS?	yes
+'y'
+*Main> ask "Do you like CS?"
+Do you like CS?	nah
+'n'
+*Main> ask "Are you bored?"
+Are you bored?	nah
+'n'
+*Main> game
+Think of a number between 1 and 100
+Is your number <= 50	no
+Is your number <= 75	yes
+Is your number <= 63	yes
+Is your number <= 57	no
+Is your number <= 60	yes
+Is your number <= 59	no
+Is your number <= 60	yes
+Your number must be 60
+*Main> game
+Think of a number between 1 and 100
+Is your number <= 50	no
+Is your number <= 75	yes
+Is your number <= 63	no
+Is your number <= 69	no
+Is your number <= 72	yes
+Is your number <= 71	yes
+Is your number <= 70	yes
+Your number must be 70
+*Main> game
+Think of a number between 1 and 100
+Is your number <= 50	yes
+Is your number <= 25	yes
+Is your number <= 12	yes
+Is your number <= 6	yes
+Is your number <= 3	yes
+Is your number <= 1	yes
+Is your number <= 0	no
+Your number must be 0
+*Main> game
+Think of a number between 1 and 100
+Is your number <= 50	no
+Is your number <= 75	yes
+Is your number <= 63	yes
+Is your number <= 57	yes
+Is your number <= 54	yes
+Is your number <= 52	yes
+Is your number <= 51	yes
+Your number must be 51
+*Main> 

@@ -1,0 +1,66 @@
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw5
+Prelude> :load "eval1.hs"
+[1 of 3] Compiling AS1              ( AS1.hs, interpreted )
+[2 of 3] Compiling Parser1          ( Parser1.hs, interpreted )
+[3 of 3] Compiling Main             ( eval1.hs, interpreted )
+Ok, modules loaded: AS1, Parser1, Main.
+*Main> eval (Div (Num 9) (Num 3))
+3
+*Main> eval (Div (Num 16) (Num 4))
+4
+*Main> eval (Cond (Num 5) (Num 5) (Num 5))
+5
+*Main> eval (Cond (Num 5) (Num 10) (Num 15))
+10
+*Main> hasPath (Fork 3
+(Fork 1
+(Fork 3 Emp Emp)
+(Fork 2 Emp Emp))
+(Fork 3
+(Fork 4 Emp Emp)
+(Fork 1 Emp Emp))) 7
+
+<interactive>:13:1: error:
+    Variable not in scope: hasPath :: IntTree -> Integer -> t
+*Main> hasPathSum (Fork 3
+(Fork 1
+(Fork 3 Emp Emp)
+(Fork 2 Emp Emp))
+(Fork 3
+(Fork 4 Emp Emp)
+(Fork 1 Emp Emp))) 7
+True
+*Main> hasPathSum (Fork 3
+(Fork 1
+(Fork 3 Emp Emp)
+(Fork 2 Emp Emp))
+(Fork 3
+(Fork 4 Emp Emp)
+(Fork 1 Emp Emp))) 5
+False
+*Main> levels (Fork 3
+(Fork 1
+(Fork 3 Emp Emp)
+(Fork 2 Emp Emp))
+(Fork 3
+(Fork 4 Emp Emp)
+(Fork 1 Emp Emp))) 6
+[]
+*Main> levels (Fork 3
+(Fork 1
+(Fork 3 Emp Emp)
+(Fork 2 Emp Emp))
+(Fork 3
+(Fork 4 Emp Emp)
+(Fork 1 Emp Emp))) 2
+[2]
+*Main> levels (Fork 3
+(Fork 1
+(Fork 3 Emp Emp)
+(Fork 2 Emp Emp))
+(Fork 3
+(Fork 4 Emp Emp)
+(Fork 1 Emp Emp))) 1
+[1,2]
+*Main> 

@@ -1,0 +1,30 @@
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw2
+Prelude> :load "hw02.hs"
+[1 of 1] Compiling Main             ( hw02.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> bmaxDepth Empty
+-1
+*Main> (bmaxDepth (Branch 'z' Empty Empty))
+0
+*Main> bmaxDepth t1
+3
+*Main> mmaxDepth t2
+2
+*Main> mmaxDepth (Node 'z' [])
+0
+*Main> quickCheck bleaves_prop
++++ OK, passed 100 tests.
+*Main> quickCheck mleaves_prop
++++ OK, passed 100 tests.
+*Main> quickCheck concat_prop
++++ OK, passed 100 tests.
+*Main> quickCheck index_prop
++++ OK, passed 100 tests.
+*Main> quickCheck split_prop
++++ OK, passed 100 tests.
+*Main> quickCheck insert_prop
++++ OK, passed 100 tests.
+*Main> quickCheck delete_prop
++++ OK, passed 100 tests.
+*Main> 

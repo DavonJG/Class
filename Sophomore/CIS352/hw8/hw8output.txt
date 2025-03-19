@@ -1,0 +1,134 @@
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw8
+Prelude> :load "LFPbs.hs"
+[1 of 4] Compiling State            ( State.hs, interpreted )
+[2 of 4] Compiling LFPas            ( LFPas.hs, interpreted )
+[3 of 4] Compiling LFPparser        ( LFPparser.hs, interpreted )
+[4 of 4] Compiling Main             ( LFPbs.hs, interpreted )
+Ok, modules loaded: State, LFPas, LFPparser, Main.
+*Main> fvt1
+x
+	 has free variables:	 ["x"]
+
+*Main> fvt2
+let x = y in (+ x y)
+	 has free variables:	 ["y"]
+
+*Main> fvt3
+((fn x => (+ x y)) y)
+	 has free variables:	 ["y"]
+
+*Main> fvt4
+((fn p => (p x)) (fn x => (+ x p)))
+	 has free variables:	 ["x","p"]
+
+*Main> fvt5
+let c = fn x => fn p => (p (* x x)) in  (let inc = fn x => (+ 1 x) in (c 4 inc))
+	 has free variables:	 []
+
+*Main> st1
+Computing: x[(y w)/x]
+result =   (y w)
+
+*Main> st2
+Computing: z[(y w)/x]
+result =   z
+
+*Main> st3
+Computing: (z x)[(y w)/x]
+result =   (z (y w))
+
+*Main> st4
+Computing: (fn x => z)[(y w)/x]
+result =   (fn x => z)
+
+*Main> st5
+Computing: (fn t => z)[(y w)/x]
+result =   (fn a => z)
+
+*Main> st6
+Computing: (fn t => x)[(y w)/x]
+result =   (fn a => (y w))
+
+*Main> st7
+Computing: (fn y => (x y))[(y w)/x]
+result =   (fn a => (y w a))
+
+*Main> st8
+Computing: (y (y z))[(z w)/x]
+result =   (y (y z))
+
+*Main> st9
+Computing: (fn u => fn w => (w x u))[(u w)/x]
+result =   (fn a => (fn c => (c (u w) a)))
+
+*Main> st10
+Computing: (fn a => fn b => (a (x b)))[(fn b => (a b)))/x]
+result =   (fn b => (fn d => (b ((fn b => (a b)) d))))
+
+*Main> et1
+Evaluating:
+    { X1 := 1;  while (> val(X0) 0) do {  X1 := (* val(X1) val(X0)); X0 := (- val(X0) 1) }}
+Result:
+    skip
+    Locs(!=0): X[1]=24 
+
+*Main> et2
+Evaluating:
+    let x = 2 in (+ 10 x)
+Result:
+    12
+    Locs(!=0): X[0]=4 
+
+*Main> et3
+Evaluating:
+    let x = 10 in let y = (+ x 1) in let x = (- y 5)  in let y = (+ y 1) in (+ (* 100 x) y)
+Result:
+    612
+    Locs(!=0): X[0]=4 
+
+*Main> et4
+Evaluating:
+    (fn x => (+ x 2))
+Result:
+    (fn x => (+ x 2))
+    Locs(!=0): X[0]=4 
+
+*Main> et5
+Evaluating:
+    ((fn x => (+ x 2)) 19)
+Result:
+    21
+    Locs(!=0): X[0]=4 
+
+*Main> et6
+*** Exception: LFPbs.hs:210:11-40: Irrefutable pattern failed for pattern ((Fun x e1'), s')
+
+Evaluating:
+    let c = fn x => fn y => (+ x y) in (c 2 3)
+Result:
+    *Main> et7
+*** Exception: LFPbs.hs:210:11-40: Irrefutable pattern failed for pattern ((Fun x e1'), s')
+
+Evaluating:
+    let c = fn x => fn p => (p (* x x))  in (let inc = fn x => (+ 1 x) in (c 4 inc))
+Result:
+    *Main> et8
+*** Exception: LFPbs.hs:211:11-56: Irrefutable pattern failed for pattern (AConst v, s'')
+
+Evaluating:
+    let c =  fn x => { X1 := (* val(X1) val(X0)); X0 := (- val(X0) x) } in  { X1 := 1;  while (> val(X0) 0) do (c 1) }
+Result:
+    *Main> et9
+*** Exception: LFPbs.hs:211:11-56: Irrefutable pattern failed for pattern (AConst v, s'')
+
+Evaluating:
+    let c =  fn x => { X1 := (* val(X1) val(X0)); X0 := (- val(X0) x) } in  { X1 := 1;  while (> val(X0) 0) do (c 2) }
+Result:
+    *Main> et10
+*** Exception: LFPbs.hs:211:11-56: Irrefutable pattern failed for pattern (AConst v, s'')
+
+Evaluating:
+    let c = { X1 := (* val(X1) val(X0)) } in  { X1 := 1;  while (> val(X0) 0) do { c; X0 := (- val(X0) 1) }}
+Result:
+    *Main> 

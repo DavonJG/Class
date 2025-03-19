@@ -1,0 +1,25 @@
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\Davon\ownCloud\Class\Sophomore\CIS352\hw1
+Prelude> :load "hw1.hs"
+[1 of 1] Compiling Main             ( hw1.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> testRun
+convert prop             : +++ OK, passed 100 tests.
+vowel prop               : +++ OK, passed 100 tests.
+disemvowel prop          : +++ OK, passed 100 tests.
+smash prop               : +++ OK, passed 100 tests.
+shift prop 1             : +++ OK, passed 100 tests.
+shift prop 2             : +++ OK, passed 100 tests.
+capitalized prop         : +++ OK, passed 100 tests.
+title prop               : +++ OK, passed 100 tests.
+*Main> isVowel 'x'
+False
+*Main> isVowel 'a'
+True
+*Main> isVowel 'r'
+False
+*Main> title ["learn", "you", "haskell"]
+["Learn","you","Haskell"]
+*Main> shift 25 "abcxyz"
+"zabwxy"
+*Main> 
