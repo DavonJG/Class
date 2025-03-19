@@ -1,0 +1,99 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw8
+> run Test8
+
+**TESTING add**
+
+ Testing: lst.add(owl) = [owl]
+	CHECK!
+ Testing: lst.add(gnu) = [gnu, owl]
+	CHECK!
+ Testing: lst.add(yak) = [gnu, owl, yak]
+	CHECK!
+ Testing: lst.add(bee) = [bee, gnu, owl, yak]
+	CHECK!
+ Testing: lst.add(cat) = [bee, cat, gnu, owl, yak]
+	CHECK!
+ Testing: lst.add(eel) = [bee, cat, eel, gnu, owl, yak]
+	CHECK!
+ Testing: lst.add(dog) = [bee, cat, dog, eel, gnu, owl, yak]
+	CHECK!
+ Testing: lst.add(cow) = [bee, cat, cow, dog, eel, gnu, owl, yak]
+	CHECK!
+ Testing: lst.add(rat) = [bee, cat, cow, dog, eel, gnu, owl, rat, yak]
+	CHECK!
+ Testing: lst.add(ram) = [bee, cat, cow, dog, eel, gnu, owl, ram, rat, yak]
+	CHECK!
+
+**TESTING neighbors**
+
+ Testing: lst.neighbors(gnu) = []
+	CHECK!
+ Testing: lst.neighbors(ant) = [bee]
+	CHECK!
+ Testing: lst.neighbors(bee) = in it
+[bee, cat]
+	CHECK!
+ Testing: lst.neighbors(zebra) = [yak]
+	CHECK!
+ Testing: lst.neighbors(yak) = in it
+[rat, yak]
+	CHECK!
+ Testing: lst.neighbors(eel) = in it
+[dog, eel, gnu]
+	CHECK!
+ Testing: lst.neighbors(ewe) = [eel, gnu]
+	CHECK!
+The list wrds: bee cat cow dog eel gnu owl ram rat yak 
+
+
+**Building concordence**
+
+        another:  116
+         battle:  177, 179, 180, 182, 183, 187, 188, 189, 196, 202
+        battles:  193
+         beetle:  177, 180, 183, 188, 189, 195, 206
+        beetles:  172, 174, 176, 182, 187, 193, 202
+        blibber:  152
+         blocks:  18, 19, 22, 33, 34
+        blubber:  152
+         bottle:  188, 189, 193, 194, 196, 202
+        bottled:  206
+         breaks:  127, 128
+         breeze:  161, 162
+         bricks:  17, 19, 22, 33, 34, 41
+         brings:  120, 121
+         brooms:  133
+         called:  177
+         cheese:  160, 163
+        chewing:  102
+         chicks:  17, 18, 19, 23, 32, 42, 47
+         choose:  104, 105
+         clocks:  19, 23, 33, 39, 40, 46
+        clothes:  72, 73, 74, 75, 81
+        duddled:  207
+         eating:  194, 203
+         enough:  167
+         freeze:  162, 163
+         freezy:  161, 162, 163
+        fuddled:  207
+         little:  172
+         minute:  200
+         muddle:  189, 195
+        muddled:  207
+         noodle:  195, 203, 206
+        noodles:  194
+         paddle:  183, 187, 189, 196
+        paddled:  206
+        paddles:  182, 193, 203
+         please:  44, 158
+         poodle:  194, 195, 203, 206
+         puddle:  179, 180, 182, 183, 187, 188, 189, 195, 203
+         rubber:  153
+         sneeze:  164
+      something:  95, 142
+        through:  160
+         tongue:  45, 91, 153
+         tricks:  22, 23
+        tweetle:  172, 174, 176, 177, 180, 182, 183, 189, 195, 202, 206
+        wuddled:  207
+> 

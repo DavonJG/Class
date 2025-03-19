@@ -1,0 +1,66 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw10
+> run BSTree
+            --
+         y
+            --
+      u
+            --
+         t
+                     --
+                  r
+                     --
+               p
+                  --
+            n
+               --
+   l
+         --
+      k
+            --
+         i
+            --
+f
+      --
+   e
+         --
+      a
+         --
+-----------------------------------------
+bst1.between('b','d') = []	Check
+bst1.between('z','a') = []	Check
+bst1.between('c','q') = [e, f, i, k, l, n, p]	Check
+bst1.between('m','z') = [n, p, r, t, u, y]	Check
+-----------------------------------------
+equals test 1:	t1.equals(t2) = true	Check
+equals test 2:	t1.equals(t2) = false	Check
+equals test 3:	t1.equals(t2) = false	Check
+equals test 4:	t1.equals(t2) = false	Check
+equals test 5:	t1.equals(t2) = true	Check
+equals test 6:	t1.equals(t2) = true	Check
+equals test 7:	t1.equals(t2) = false	Check
+equals test 8:	t1.equals(t2) = false	Check
+-----------------------------------------
+Inorder traversals using successor and predecessor
+	In order (left to right): [a, e, f, i, k, l, n, p, r, t, u, y]
+		Check
+	In order (right to left): [y, u, t, r, p, n, l, k, i, f, e, a]
+	Check
+-----------------------------------------
+Inorder traversals using the ListIterator
+	In order (left to right): a
+e
+f
+i
+k
+l
+n
+p
+r
+t
+u
+y
+[a, e, f, i, k, l, n, p, r, t, u, y]
+		Check
+	In order (right to left): [y, u, t, r, p, n, l, k, i, f, e, a]
+	Check
+> 

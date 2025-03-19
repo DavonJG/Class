@@ -1,0 +1,86 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw9
+> run ExprTest
+false
+varVals.get('a') = 0.0	varVals.get('b') = 1.0	varVals.get('c') = 2.0	
+varVals.get('d') = 3.0	varVals.get('e') = 4.0	varVals.get('f') = 5.0	
+varVals.get('g') = 6.0	varVals.get('h') = -1.0	varVals.get('i') = -5.0	
+varVals.get('j') = 0.125	varVals.get('k') = 10.0	varVals.get('l') = 3.5	
+varVals.get('m') = 2.1	varVals.get('n') = 5.4	varVals.get('o') = 14.0	
+varVals.get('p') = 15.0	varVals.get('q') = 16.0	varVals.get('r') = 17.0	
+varVals.get('s') = 18.0	varVals.get('t') = 19.0	varVals.get('u') = 20.0	
+varVals.get('v') = -0.3	varVals.get('w') = 20.0	varVals.get('x') = 2.0	
+varVals.get('y') = 4.0	varVals.get('z') = 100.0	
+
+
+*** Tests for eval ***
+Passed.  ( 2.0 +  3.0 ) evaluates to 5.0
+Passed.  ( ( 2.0 +  3.0 ) -  4.0 ) evaluates to 1.0
+Passed.  ( 2.0 +  ( 3.0 *  4.0 ) ) evaluates to 14.0
+Passed.  ( ( 2.0 +  3.0 ) *  4.0 ) evaluates to 20.0
+Passed.  x evaluates to 2.0
+Passed.  y evaluates to 4.0
+Passed.  ( x +  ( 3.0 *  ( y /  5.0 ) ) ) evaluates to 4.4
+Passed.  ( ( ( w +  ( x *  ( ( 4.0 +  5.0 ) /  6.0 ) ) ) +  ( 7.0 *  8.0 ) ) -  y ) evaluates to 75.0
+Passed.  ( x +  ( ( 12.0 -  y ) *  ( y +  ( 3.0 *  2.0 ) ) ) ) evaluates to 82.0
+Passed.  ( ( z +  1.0 ) +  ( ( 12.0 -  y ) *  ( ( z +  1.0 ) +  y ) ) ) evaluates to 941.0
+
+*** Tests for fromPostfix ***
+Passed. Both expressions =  ( 2.0 +  3.0 )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) -  4.0 )
+Passed. Both expressions =  ( 2.0 +  ( 3.0 *  4.0 ) )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) *  4.0 )
+Passed. Both expressions =  x
+Passed. Both expressions =  y
+Passed. Both expressions =  ( x +  ( 3.0 *  ( y /  5.0 ) ) )
+Passed. Both expressions =  ( ( ( w +  ( x *  ( ( 4.0 +  5.0 ) /  6.0 ) ) ) +  ( 7.0 *  8.0 ) ) -  y )
+Passed. Both expressions =  ( x +  ( ( 12.0 -  y ) *  ( y +  ( 3.0 *  2.0 ) ) ) )
+Passed. Both expressions =  ( ( z +  1.0 ) +  ( ( 12.0 -  y ) *  ( ( z +  1.0 ) +  y ) ) )
+
+*** Tests for toInfix ***
+Passed. Both expressions =  ( 2.0 +  3.0 )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) -  4.0 )
+Passed. Both expressions =  ( 2.0 +  ( 3.0 *  4.0 ) )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) *  4.0 )
+Passed. Both expressions =  x
+Passed. Both expressions =  y
+Passed. Both expressions =  ( x +  ( 3.0 *  ( y /  5.0 ) ) )
+Passed. Both expressions =  ( ( ( w +  ( x *  ( ( 4.0 +  5.0 ) /  6.0 ) ) ) +  ( 7.0 *  8.0 ) ) -  y )
+Passed. Both expressions =  ( x +  ( ( 12.0 -  y ) *  ( y +  ( 3.0 *  2.0 ) ) ) )
+Passed. Both expressions =  ( ( z +  1.0 ) +  ( ( 12.0 -  y ) *  ( ( z +  1.0 ) +  y ) ) )
+
+*** Tests for toPostfix ***
+Passed. Both expressions =  ( 2.0 +  3.0 )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) -  4.0 )
+Passed. Both expressions =  ( 2.0 +  ( 3.0 *  4.0 ) )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) *  4.0 )
+Passed. Both expressions =  x
+Passed. Both expressions =  y
+Passed. Both expressions =  ( x +  ( 3.0 *  ( y /  5.0 ) ) )
+Passed. Both expressions =  ( ( ( w +  ( x *  ( ( 4.0 +  5.0 ) /  6.0 ) ) ) +  ( 7.0 *  8.0 ) ) -  y )
+Passed. Both expressions =  ( x +  ( ( 12.0 -  y ) *  ( y +  ( 3.0 *  2.0 ) ) ) )
+Passed. Both expressions =  ( ( z +  1.0 ) +  ( ( 12.0 -  y ) *  ( ( z +  1.0 ) +  y ) ) )
+
+*** Tests for simplify ***
+Passed. Both expressions =  5.0
+Passed. Both expressions =  1.0
+Passed. Both expressions =  14.0
+Passed. Both expressions =  20.0
+Passed. Both expressions =  x
+Passed. Both expressions =  y
+Passed. Both expressions =  ( x +  ( 3.0 *  ( y /  5.0 ) ) )
+Passed. Both expressions =  ( ( ( w +  ( x *  1.5 ) ) +  56.0 ) -  y )
+Passed. Both expressions =  ( x +  ( ( 12.0 -  y ) *  ( y +  6.0 ) ) )
+Passed. Both expressions =  ( ( z +  1.0 ) +  ( ( 12.0 -  y ) *  ( ( z +  1.0 ) +  y ) ) )
+
+*** Tests for substitute ***
+Passed. Both expressions =  ( 2.0 +  3.0 )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) -  4.0 )
+Passed. Both expressions =  ( 2.0 +  ( 3.0 *  4.0 ) )
+Passed. Both expressions =  ( ( 2.0 +  3.0 ) *  4.0 )
+Passed. Both expressions =  x
+Passed. Both expressions =  ( z +  1.0 )
+Passed. Both expressions =  ( x +  ( 3.0 *  ( ( z +  1.0 ) /  5.0 ) ) )
+Passed. Both expressions =  ( ( ( w +  ( x *  ( ( 4.0 +  5.0 ) /  6.0 ) ) ) +  ( 7.0 *  8.0 ) ) -  ( z +  1.0 ) )
+Passed. Both expressions =  ( x +  ( ( 12.0 -  ( z +  1.0 ) ) *  ( ( z +  1.0 ) +  ( 3.0 *  2.0 ) ) ) )
+Passed. Both expressions =  ( ( z +  1.0 ) +  ( ( 12.0 -  ( z +  1.0 ) ) *  ( ( z +  1.0 ) +  ( z +  1.0 ) ) ) )
+> 

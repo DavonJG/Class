@@ -1,0 +1,59 @@
+Welcome to DrJava.  Working directory is /home/davon/ownCloud/Class/Sophomore/CIS351/hw7
+> run Test7
+
+
+*** Testing for splitAt
+
+Starting with lst = [a, b, c, d, e], lst.splitAt(0) returns [] and lst becomes [a, b, c, d, e]  Check!
+Starting with lst = [a, b, c, d, e], lst.splitAt(1) returns [a] and lst becomes [b, c, d, e]  Check!
+Starting with lst = [b, c, d, e], lst.splitAt(3) returns [b, c, d] and lst becomes [e]  Check!
+Starting with lst = [e], lst.splitAt(27) returns [e] and lst becomes []  Check!
+Starting with lst = [1, 2, 3, 4, 5], lst.splitAt(4) returns [1, 2, 3, 4] and lst becomes [5]  Check!
+Starting with lst = [1, 2, 3, 4, 5], lst.splitAt(-1) returns [] and lst becomes [1, 2, 3, 4, 5]  Check!
+Starting with lst = [1, 2, 3, 4, 5], lst.splitAt(2) returns [1, 2] and lst becomes [3, 4, 5]  Check!
+
+
+*** Testing for reverseCopy
+
+Starting with lst = [], lst.reverseCopy() returns [] and lst becomes []  Check!
+Starting with lst = [X], lst.reverseCopy() returns [X] and lst becomes [X]  Check!
+Starting with lst = [A, Z], lst.reverseCopy() returns [Z, A] and lst becomes [A, Z]  Check!
+Starting with lst = [d, u, n, d, e, r, p, a, t, e], lst.reverseCopy() returns [e, t, a, p, r, e, d, n, u, d] and lst becomes [d, u, n, d, e, r, p, a, t, e]  Check!
+Starting with lst = [h, e, l, l, o], lst.reverseCopy() returns [o, l, l, e, h] and lst becomes [h, e, l, l, o]  Check!
+Starting with lst = [1, 4, 3, 7, 6, 4, 6], lst.reverseCopy() returns [6, 4, 6, 7, 3, 4, 1] and lst becomes [1, 4, 3, 7, 6, 4, 6]  Check!
+Starting with lst = [!, !, !], lst.reverseCopy() returns [!, !, !] and lst becomes [!, !, !]  Check!
+
+
+*** Testing for reverse
+
+Starting with lst = [], after lst.reverse() lst becomes []  Check!
+Starting with lst = [X], after lst.reverse() lst becomes [X]  Check!
+Starting with lst = [A, Z], after lst.reverse() lst becomes [Z, A]  Check!
+Starting with lst = [d, u, n, d, e, r, p, a, t, e], after lst.reverse() lst becomes [e, t, a, p, r, e, d, n, u, d]  Check!
+Starting with lst = [h, e, l, l, o], after lst.reverse() lst becomes [o, l, l, e, h]  Check!
+Starting with lst = [1, 4, 3, 7, 6, 4, 6], after lst.reverse() lst becomes [6, 4, 6, 7, 3, 4, 1]  Check!
+Starting with lst = [!, !, !], after lst.reverse() lst becomes [!, !, !]  Check!
+
+
+*** Testing for merge
+
+Starting with lst1 = [] and lst2 = [] merge(lst1,lst2) returns []  Check!
+Starting with lst1 = [2, 4, 8] and lst2 = [] merge(lst1,lst2) returns [2, 4, 8]  Check!
+Starting with lst1 = [] and lst2 = [2, 4, 8] merge(lst1,lst2) returns [2, 4, 8]  Check!
+Starting with lst1 = [2, 4, 8] and lst2 = [1, 9] merge(lst1,lst2) returns [1, 2, 4, 8, 9]  Check!
+Starting with lst1 = [2, 4, 8] and lst2 = [1, 3, 6, 9] merge(lst1,lst2) returns [1, 2, 3, 4, 6, 8, 9]  Check!
+Starting with lst1 = [-1] and lst2 = [1] merge(lst1,lst2) returns [-1, 1]  Check!
+Starting with lst1 = [10, 11, 12] and lst2 = [13] merge(lst1,lst2) returns [10, 11, 12, 13]  Check!
+
+
+*** Testing for mergesort
+
+Starting with lst = [] mergesort(lst) returns []  Check!
+Starting with lst = [2] mergesort(lst) returns [2]  Check!
+Starting with lst = [1, 2, 3, 4, 5, 6, 7] mergesort(lst) returns [1, 2, 3, 4, 5, 6, 7]  Check!
+Starting with lst = [7, 6, 5, 4, 3, 2, 1] mergesort(lst) returns [1, 2, 3, 4, 5, 6, 7]  Check!
+Starting with lst = [4, 1, 7, 6, 5, 3, 2] mergesort(lst) returns [1, 2, 3, 4, 5, 6, 7]  Check!
+Starting with lst = [1, 2, 3, 4, 5, 6, 7] mergesort(lst) returns [1, 2, 3, 4, 5, 6, 7]  Check!
+Starting with lst = [7, 6, 5, 4, 3, 2, 1] mergesort(lst) returns [1, 2, 3, 4, 5, 6, 7]  Check!
+Starting with lst = [4, 1, 7, 6, 5, 3, 2] mergesort(lst) returns [1, 2, 3, 4, 5, 6, 7]  Check!
+> 
