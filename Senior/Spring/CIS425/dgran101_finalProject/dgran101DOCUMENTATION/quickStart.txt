@@ -1,0 +1,16 @@
+After launching Fishing with the Fellas, press spacebar to move past the title screen. Afterwards, you will see the fisherman and his friend on the boat, as well as fish in the water. If you right click anywhere on the screen, the menu will appear. You are able to  switch the time of day between morning and night, which changes the lighting as well as if the sun or the moon is in the air. You are also able to choose three friend speech options: compliment, antagonize, or joke. Pressing any of these options draws a textbox coming out of the friend's head, as well as corresponding text. In addition, you can change the color of the bobber on the fishing rod (there are 3 options.). Second to last on the menu is "catch a fish," which will make the fish swim in a catchable position Finally, you are able to quit via the right click menu. 
+
+An important function that is not available in the menu but available on the keyboard is pressing "k" to make the fish start swimming. Once the fish is swimming, it will constantly move in a back and forth motion. In addition to that, all of the features that are in the menu are available via keyboard:
+
+Press 'esc' to quit
+Press 'r' to reset the scene
+Press 's' to switch between day and night
+Press 'c' to get rid of dialogue on screen
+Press 'i' to make the bobber red & blue
+Press 'o' to make the bobber orange & blue
+Press 'p' to make the bobber black & yellow
+Press 'b' to make the friend compliment the fisherman
+Press 'n' to make the friend insult the fisherman
+Press 'm' to make the friend say a joke
+Press 'k' to make the fish start swimming back and forth
+Press 'v' to make the fish swim in a position to be caught on the next passaround.

@@ -1,0 +1,39 @@
+Davon Grant
+CIS425 Final Project Brag Sheet
+
+Interactions:
+Press 'Space' to begin
+Press 'esc' to quit
+Press 'r' to reset the scene
+Press 's' to switch between day and night
+Press 'c' to get rid of dialogue on screen
+Press 'i' to make the bobber red & blue
+Press 'o' to make the bobber orange & blue
+Press 'p' to make the bobber black & yellow
+Press 'b' to make the friend compliment the fisherman
+Press 'n' to make the friend insult the fisherman
+Press 'm' to make the friend say a joke
+Press 'k' to make the fish start swimming back and forth
+Press 'v' to make the fish swim in a position to be caught on the next passaround.
+
+Right click the window to display submenu's:
+	Left click Time of Day > Morning to change to daytime
+	Left click Time of Day > Night to change to daytime
+	Left click Friend Speech > Compliment to make friend say a compliment
+	Left click Friend Speech > Antagonize to make friend be rude
+	Left click Bobber Color > Red and White to make the bobber appear red and white
+	Left click Bobber Color > Blue and Orange to make the bobber appear blue and orange
+	Left click Bobber Color > Black and Yellow to make the bobber appear black and yellow
+	Left click "Catch a Fish!" to make the fish swim in a position to be caught on the next passaround.
+	Left click Quit to exit program
+
+Some major problems that I had during this project were:
+-Getting textures working properly. For some reason, everytime I tried to load textures, I got a memory allocation error and was unable to load them successfully. I planned on texturing the fish, as well as creating a textured geyser at the bottom of the water
+-Lighting. For the first time in a project, I was able to successfully implement lighting thanks to the help of SphereInBox2.cpp. However, I still did not get super in depth with it, which was something I regretted.
+-Animation. My attempts at animating my fish kept coming out poorly, so I removed it in the end. If it gets fixed prior to the presentation, it will be readded.
+
+Some features that I was able to successfully get were:
+-Creating a multipart fishing rod via the use of quadric items
+-Successfully using lighting material properties
+-Correctly making dialogue
+-Successful animation. This included making the fish swim smoothly back and forth, as well as making the capture process smooth
