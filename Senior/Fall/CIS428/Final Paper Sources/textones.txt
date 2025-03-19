@@ -1,0 +1,13 @@
+s2 - http://www.pearsonitcertification.com/articles/article.aspx?p=31562&seqNum=3
+s3 - https://osi-model.com/data-link-layer/
+s4 - https://searchnetworking.techtarget.com/definition/Ethernet
+s5 - https://search-proquest-com.libezproxy2.syr.edu/docview/208112235/2DFBBC75061E4F7DPQ/2?accountid=14214
+s6 - https://www.ibm.com/support/knowledgecenter/zosbasics/com.ibm.zos.znetwork/znetwork_31.htm
+s7 https://www.comparitech.com/blog/vpn-privacy/ipv6-vs-ipv4/
+s8 https://cdn.ttgtmedia.com/searchEnterpriseLinux/downloads/Kozierok_Ch29.pdf
+s9 https://search-proquest-com.libezproxy2.syr.edu/docview/216370047?accountid=14214
+
+
+pictures - 
+normal - https://www.cwnp.com/cwnp-wifi-blog/whytheosimodelmatters/
+application layer http://www.networkingsignal.com/osi-model-vs-tcp-ip-model/
